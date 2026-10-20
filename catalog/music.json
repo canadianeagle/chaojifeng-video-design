@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "library_id": "user-music-library",
+  "revision": "public-empty-v1",
+  "track_count": 0,
+  "cue_count": 0,
+  "interpretation": "Empty user-managed catalog. Add authorized music and actual measurements before searching or rendering.",
+  "taxonomy": {
+    "emotions": {
+      "tension": "紧张",
+      "defiant": "不屈",
+      "triumphant": "胜利",
+      "playful": "俏皮",
+      "curious": "好奇",
+      "bright": "明快",
+      "confident": "自信",
+      "energetic": "活力",
+      "neutral": "中性",
+      "focused": "专注",
+      "relaxed": "松弛",
+      "warm": "温暖",
+      "intimate": "亲近",
+      "hopeful": "希望",
+      "calm": "平静",
+      "reflective": "回望",
+      "wistful": "惆怅",
+      "mischievous": "诙谐",
+      "unknown": "待核听",
+      "urgent": "紧迫",
+      "tender": "温柔",
+      "awe": "敬畏"
+    },
+    "roles": {
+      "establish": "建立情境",
+      "explain": "解释陪衬",
+      "hook": "吸引注意",
+      "tension": "悬念与压力",
+      "build": "逐步建立",
+      "drive": "行动推进",
+      "reveal": "揭示",
+      "payoff": "成果落点",
+      "release": "释放",
+      "breathe": "消化与留白",
+      "resolve": "收束"
+    },
+    "scenarios": {
+      "product-demo": "产品演示",
+      "knowledge-explainer": "知识讲解",
+      "news-brief": "资讯呈现",
+      "image-story": "图片成片",
+      "story-video": "故事视频",
+      "feature-motion": "功能动效",
+      "brand-film": "品牌形象短片",
+      "music-visual": "音乐／视觉表演"
+    }
+  },
+  "items": []
+}

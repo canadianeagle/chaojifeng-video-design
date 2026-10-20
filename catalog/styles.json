@@ -1,0 +1,516 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "product-minimal",
+      "name": "清晰产品",
+      "intent": "突出界面与操作。",
+      "applicable_inputs": [
+        "内容目标和受众",
+        "已知品牌约束或允许原创的范围",
+        "实际素材与画幅"
+      ],
+      "constraints": [
+        "产品原tokens优先，包装不改写真实UI。",
+        "关键文字保持清楚对比。"
+      ],
+      "fallback": "保留真实界面、高对比标题和静态焦点。",
+      "verification": {
+        "design": {
+          "status": "authored",
+          "evidence": []
+        },
+        "preview": {
+          "status": "not_run",
+          "evidence": []
+        },
+        "exported": {
+          "status": "not_run",
+          "evidence": []
+        }
+      },
+      "tokens": {
+        "background": "#F5F7FA",
+        "foreground": "#172033",
+        "accent": "#2463EB",
+        "muted": "#66748C",
+        "font_stack": [
+          "system-ui",
+          "PingFang SC",
+          "Noto Sans SC",
+          "sans-serif"
+        ],
+        "radius": {
+          "value": 16,
+          "unit": "px"
+        },
+        "spacing": {
+          "base": 8,
+          "unit": "px",
+          "scale": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ]
+        },
+        "line_weight": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "motion_character": {
+        "tempo": "克制动作后稳定呈现结果",
+        "easing": "平稳减速",
+        "emphasis": "每次突出一个语义焦点"
+      },
+      "avoid": [
+        "装饰粒子抢焦点",
+        "全局文字反复缩放"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "paper-editorial",
+      "name": "纸面编辑",
+      "intent": "承载解释、来源与阅读。",
+      "applicable_inputs": [
+        "内容目标和受众",
+        "已知品牌约束或允许原创的范围",
+        "实际素材与画幅"
+      ],
+      "constraints": [
+        "中文字体单独确认，不凭fallback判断加载。",
+        "来源不放不可读脚注。"
+      ],
+      "fallback": "纯色纸底与清晰字体，取消纹理。",
+      "verification": {
+        "design": {
+          "status": "authored",
+          "evidence": []
+        },
+        "preview": {
+          "status": "not_run",
+          "evidence": []
+        },
+        "exported": {
+          "status": "not_run",
+          "evidence": []
+        }
+      },
+      "tokens": {
+        "background": "#F6F1E7",
+        "foreground": "#252925",
+        "accent": "#B64D2C",
+        "muted": "#6E746D",
+        "font_stack": [
+          "Georgia",
+          "PingFang SC",
+          "Noto Sans SC",
+          "serif"
+        ],
+        "radius": {
+          "value": 4,
+          "unit": "px"
+        },
+        "spacing": {
+          "base": 8,
+          "unit": "px",
+          "scale": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ]
+        },
+        "line_weight": {
+          "value": 1.5,
+          "unit": "px"
+        }
+      },
+      "motion_character": {
+        "tempo": "段落推进，留阅读空间",
+        "easing": "轻缓减速",
+        "emphasis": "每次突出一个语义焦点"
+      },
+      "avoid": [
+        "装饰性长英文标签",
+        "纹理盖过细字"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "dark-tech",
+      "name": "暗色技术",
+      "intent": "区分操作、信息流与状态。",
+      "applicable_inputs": [
+        "内容目标和受众",
+        "已知品牌约束或允许原创的范围",
+        "实际素材与画幅"
+      ],
+      "constraints": [
+        "光晕只作辅助，正文不依赖发光。",
+        "真实UI不擅自转暗。"
+      ],
+      "fallback": "去辉光粒子，保留暗底高对比信息。",
+      "verification": {
+        "design": {
+          "status": "authored",
+          "evidence": []
+        },
+        "preview": {
+          "status": "not_run",
+          "evidence": []
+        },
+        "exported": {
+          "status": "not_run",
+          "evidence": []
+        }
+      },
+      "tokens": {
+        "background": "#101722",
+        "foreground": "#EDF3FC",
+        "accent": "#5CD6C5",
+        "muted": "#A4B3C6",
+        "font_stack": [
+          "ui-monospace",
+          "SFMono-Regular",
+          "PingFang SC",
+          "Noto Sans SC",
+          "monospace"
+        ],
+        "radius": {
+          "value": 12,
+          "unit": "px"
+        },
+        "spacing": {
+          "base": 8,
+          "unit": "px",
+          "scale": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ]
+        },
+        "line_weight": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "motion_character": {
+        "tempo": "短促动作与结果停留交替",
+        "easing": "快速且稳定",
+        "emphasis": "每次突出一个语义焦点"
+      },
+      "avoid": [
+        "满屏霓虹",
+        "乱码代替真实信息"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "mono-diagram",
+      "name": "单色图解",
+      "intent": "用位置、线条和强调表达关系。",
+      "applicable_inputs": [
+        "内容目标和受众",
+        "已知品牌约束或允许原创的范围",
+        "实际素材与画幅"
+      ],
+      "constraints": [
+        "箭头定义含义，因果/时间/指向分开。",
+        "类别另用文字或线型区分。"
+      ],
+      "fallback": "拆分关系或静态图逐段讲解。",
+      "verification": {
+        "design": {
+          "status": "authored",
+          "evidence": []
+        },
+        "preview": {
+          "status": "not_run",
+          "evidence": []
+        },
+        "exported": {
+          "status": "not_run",
+          "evidence": []
+        }
+      },
+      "tokens": {
+        "background": "#FAFAF7",
+        "foreground": "#202421",
+        "accent": "#386A50",
+        "muted": "#70796F",
+        "font_stack": [
+          "system-ui",
+          "PingFang SC",
+          "Noto Sans SC",
+          "sans-serif"
+        ],
+        "radius": {
+          "value": 6,
+          "unit": "px"
+        },
+        "spacing": {
+          "base": 8,
+          "unit": "px",
+          "scale": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ]
+        },
+        "line_weight": {
+          "value": 2.5,
+          "unit": "px"
+        }
+      },
+      "motion_character": {
+        "tempo": "先对象后关系，关系后停留",
+        "easing": "直接轻减速",
+        "emphasis": "每次突出一个语义焦点"
+      },
+      "avoid": [
+        "无含义连线",
+        "装饰箭头",
+        "多个焦点同时闪烁"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "vivid-collage",
+      "name": "鲜明拼贴",
+      "intent": "用图片切块和尺度差建立节奏。",
+      "applicable_inputs": [
+        "内容目标和受众",
+        "已知品牌约束或允许原创的范围",
+        "实际素材与画幅"
+      ],
+      "constraints": [
+        "只用获准素材，不无依据重构人物品牌。",
+        "复杂内容不用碎片排版。"
+      ],
+      "fallback": "单图加说明，取消旋转拼贴。",
+      "verification": {
+        "design": {
+          "status": "authored",
+          "evidence": []
+        },
+        "preview": {
+          "status": "not_run",
+          "evidence": []
+        },
+        "exported": {
+          "status": "not_run",
+          "evidence": []
+        }
+      },
+      "tokens": {
+        "background": "#FFF8E9",
+        "foreground": "#272128",
+        "accent": "#DD4D38",
+        "muted": "#786E75",
+        "font_stack": [
+          "Arial Black",
+          "PingFang SC",
+          "Noto Sans SC",
+          "sans-serif"
+        ],
+        "radius": {
+          "value": 0,
+          "unit": "px"
+        },
+        "spacing": {
+          "base": 12,
+          "unit": "px",
+          "scale": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ]
+        },
+        "line_weight": {
+          "value": 3,
+          "unit": "px"
+        }
+      },
+      "motion_character": {
+        "tempo": "切块出现后稳定阅读",
+        "easing": "有限回弹",
+        "emphasis": "每次突出一个语义焦点"
+      },
+      "avoid": [
+        "所有块同时旋转",
+        "高频闪烁",
+        "来源不明图片"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "cinematic-photo",
+      "name": "影像叙事",
+      "intent": "让已有照片和影像主体承担叙事。",
+      "applicable_inputs": [
+        "内容目标和受众",
+        "已知品牌约束或允许原创的范围",
+        "实际素材与画幅"
+      ],
+      "constraints": [
+        "文字有对比底或安全区域。",
+        "推近不裁掉关键证据。"
+      ],
+      "fallback": "原图静态，以字幕与顺序叙事。",
+      "verification": {
+        "design": {
+          "status": "authored",
+          "evidence": []
+        },
+        "preview": {
+          "status": "not_run",
+          "evidence": []
+        },
+        "exported": {
+          "status": "not_run",
+          "evidence": []
+        }
+      },
+      "tokens": {
+        "background": "#151918",
+        "foreground": "#F3F0E7",
+        "accent": "#D5A86A",
+        "muted": "#B3B7AE",
+        "font_stack": [
+          "Georgia",
+          "PingFang SC",
+          "Noto Sans SC",
+          "serif"
+        ],
+        "radius": {
+          "value": 0,
+          "unit": "px"
+        },
+        "spacing": {
+          "base": 12,
+          "unit": "px",
+          "scale": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ]
+        },
+        "line_weight": {
+          "value": 1.5,
+          "unit": "px"
+        }
+      },
+      "motion_character": {
+        "tempo": "推进与静止呼吸并存",
+        "easing": "平缓进出",
+        "emphasis": "每次突出一个语义焦点"
+      },
+      "avoid": [
+        "全片持续漂移",
+        "假景深破坏细节",
+        "强制黑场收尾"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "dual-ground-launch",
+      "name": "双底色发布片",
+      "intent": "用两块底色分别承担问题与解答，只有一个强调色，三种字体声线各管一类内容。",
+      "applicable_inputs": [
+        "内容目标和受众",
+        "已知品牌约束或允许原创的范围",
+        "实际素材与画幅"
+      ],
+      "constraints": [
+        "产品原tokens优先，包装不改写真实UI。",
+        "底色翻转只发生一次；强调色只有一个。",
+        "成功/错误色只作界面语义，不用来装饰。"
+      ],
+      "fallback": "单一底色，用留白与密度区分问题和解答。",
+      "verification": {
+        "design": {
+          "status": "authored",
+          "evidence": []
+        },
+        "preview": {
+          "status": "not_run",
+          "evidence": []
+        },
+        "exported": {
+          "status": "not_run",
+          "evidence": []
+        }
+      },
+      "tokens": {
+        "background": "#F3F1EC",
+        "foreground": "#1B1E22",
+        "accent": "#E2572B",
+        "muted": "#8A8F98",
+        "ground_problem": "#16181C",
+        "foreground_on_problem": "#F1EEE6",
+        "font_stack": [
+          "system-ui",
+          "PingFang SC",
+          "Noto Sans SC",
+          "sans-serif"
+        ],
+        "voice_fonts": {
+          "human": "衬线，用于判决牌",
+          "system": "无衬线与等宽，用于界面",
+          "promise": "粗黑大写，用于章节承诺"
+        },
+        "radius": {
+          "value": 14,
+          "unit": "px"
+        },
+        "spacing": {
+          "base": 8,
+          "unit": "px",
+          "scale": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ]
+        },
+        "line_weight": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "motion_character": {
+        "tempo": "问题段短促，解答段稳定；转折前留短静默。",
+        "easing": "快入慢落；转折与出画处加速。",
+        "emphasis": "每次突出一个语义焦点，强调色只落在关键名词。"
+      },
+      "avoid": [
+        "两块底色来回切换超过两次",
+        "强调色多于一个",
+        "直接沿用来源片的品牌色、字体或吉祥物",
+        "成功/错误色用作装饰"
+      ],
+      "source_refs": []
+    }
+  ]
+}
