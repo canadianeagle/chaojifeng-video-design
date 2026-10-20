@@ -2,7 +2,7 @@
   "schema_version": 1,
   "published_date": "2026-10-20",
   "repository": "https://github.com/mileson/chaojifeng-video-design",
-  "media_license": "Showcase only; excluded from repository MIT license. See README.md.",
+  "media_license": "Videos for showcase only; excluded from repository MIT license. See README.md.",
   "tool": "FFmpeg (existing local installation)",
   "items": [
     {
@@ -47,15 +47,10 @@
         "continuous_playback_review": "not_run",
         "boundary_visual_review": "sampled_first_last_and_join_frames"
       },
-      "preview": {
-        "file": "rounded-corner-preview.gif",
-        "sha256": "78d3dc835bb0511077f24efaffa7b2fb2277ecb12cf2b451f930eb38cf0345bb",
-        "bytes": 1190319,
-        "duration_seconds": 4.5,
-        "frames_per_second": 8,
-        "audio": false,
-        "source_in_seconds": 24.533333,
-        "source_out_seconds": 29.033333
+      "github_video_attachment": {
+        "url": "https://github.com/user-attachments/assets/d87f8264-0a95-40d6-adbb-4e7e0afa32d3",
+        "presentation": "native GitHub video player",
+        "audio": true
       }
     },
     {
@@ -105,15 +100,10 @@
         "continuous_playback_review": "not_run",
         "boundary_visual_review": "sampled_first_last_and_join_frames"
       },
-      "preview": {
-        "file": "ai-evolution-rap-preview.gif",
-        "sha256": "d3c5deb9f52e76f426b9fe7dfa7bbe2871b5f8da76bf6add99872525037eccbb",
-        "bytes": 1413334,
-        "duration_seconds": 4.5,
-        "frames_per_second": 8,
-        "audio": false,
-        "source_in_seconds": 29.633333,
-        "source_out_seconds": 34.133333
+      "github_video_attachment": {
+        "url": "https://github.com/user-attachments/assets/bced29b5-a55a-4f92-85a5-865c6730752a",
+        "presentation": "native GitHub video player",
+        "audio": true
       }
     }
   ]

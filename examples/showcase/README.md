@@ -1,12 +1,12 @@
 # 成片案例
 
-两段从实际作品中剪出的高亮，分别展示产品功能与音乐叙事的表达方式。点击预览可打开带声音的 MP4。
+两段从实际作品中剪出的高亮，分别展示产品功能与音乐叙事的表达方式。点击播放器即可观看带声音的视频。
 
 ## 小圆角
 
-[![小圆角高亮预览](rounded-corner-preview.gif)](https://raw.githubusercontent.com/mileson/chaojifeng-video-design/main/examples/showcase/rounded-corner-highlight.mp4)
+https://github.com/user-attachments/assets/d87f8264-0a95-40d6-adbb-4e7e0afa32d3
 
-[观看带声音的高亮片段](https://raw.githubusercontent.com/mileson/chaojifeng-video-design/main/examples/showcase/rounded-corner-highlight.mp4)
+[观看带声音的高亮片段](https://github.com/user-attachments/assets/d87f8264-0a95-40d6-adbb-4e7e0afa32d3)
 
 同一组九张小卡先随滑块变圆，再进入批量处理界面，最后组成环形展示。歌词、字幕和画面动作围绕“边角变温柔”推进，让功能变化有明确的视觉结果。
 
@@ -16,9 +16,9 @@
 
 ## AI 闯关记
 
-[![AI 闯关记高亮预览](ai-evolution-rap-preview.gif)](https://raw.githubusercontent.com/mileson/chaojifeng-video-design/main/examples/showcase/ai-evolution-rap-highlight.mp4)
+https://github.com/user-attachments/assets/bced29b5-a55a-4f92-85a5-865c6730752a
 
-[观看带声音的高亮片段](https://raw.githubusercontent.com/mileson/chaojifeng-video-design/main/examples/showcase/ai-evolution-rap-highlight.mp4)
+[观看带声音的高亮片段](https://github.com/user-attachments/assets/bced29b5-a55a-4f92-85a5-865c6730752a)
 
 从开机、倒数和标题落点，切到“升级闯关”的副歌。进度条、阶梯、逐字字幕与节拍共同推进，用同一个闯关母题连接开场和段落转折。
 
@@ -35,8 +35,8 @@
 | 小圆角 | `3d62c03f-7ded-4f0d-8806-169697b0ffbb` |
 | AI 闯关记 | `ea170c35-525b-4fbe-8d27-e1d5e81c2f0e` |
 
-原片文件名、选段时间与文件校验值见 [案例清单](manifest.json)。仓库仅收录高亮与预览。
+原片文件名、选段时间与文件校验值见 [案例清单](manifest.json)。仓库收录高亮视频，页面使用 GitHub 原生视频播放器。
 
 ## 使用范围
 
-本目录的视频与预览用于作者作品展示，不纳入仓库代码和方法文档的 MIT 许可。需要转载、改编或提取素材时，请先取得作者及相关权利人的许可。
+本目录的视频用于作者作品展示，不纳入仓库代码和方法文档的 MIT 许可。需要转载、改编或提取素材时，请先取得作者及相关权利人的许可。

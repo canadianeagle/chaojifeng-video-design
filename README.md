@@ -18,15 +18,15 @@
 
 ### 小圆角
 
-[![小圆角高亮预览](examples/showcase/rounded-corner-preview.gif)](https://raw.githubusercontent.com/mileson/chaojifeng-video-design/main/examples/showcase/rounded-corner-highlight.mp4)
+https://github.com/user-attachments/assets/d87f8264-0a95-40d6-adbb-4e7e0afa32d3
 
-22 秒竖屏片段，将圆角滑动、九张批量处理与小卡环形展示串成一段。点击预览观看带声音的视频。
+22 秒竖屏片段，将圆角滑动、九张批量处理与小卡环形展示串成一段。点击播放器观看，可通过音量按钮开启声音。
 
 ### AI 闯关记
 
-[![AI 闯关记高亮预览](examples/showcase/ai-evolution-rap-preview.gif)](https://raw.githubusercontent.com/mileson/chaojifeng-video-design/main/examples/showcase/ai-evolution-rap-highlight.mp4)
+https://github.com/user-attachments/assets/bced29b5-a55a-4f92-85a5-865c6730752a
 
-约 18.6 秒横屏高亮，将开机倒数与“升级闯关”副歌串联。点击预览观看带声音的视频。
+约 18.6 秒横屏高亮，将开机倒数与“升级闯关”副歌串联。点击播放器观看，可通过音量按钮开启声音。
 
 两部作品均在 Cursor 中协作制作。选段、方法对应和创作来源见 [案例说明](examples/showcase/README.md)。
 
@@ -99,4 +99,4 @@ python3 scripts/build_music_atlas.py
 
 ## 许可与来源
 
-本仓库原创代码、文档、模板和图册采用 [MIT License](LICENSE)。案例视频与预览的使用范围见 [案例说明](examples/showcase/README.md#使用范围)。方法参考及其边界见 [来源说明](references/sources.md)。外部链接指向的代码、商标、字体、音乐与视频按各自许可使用。
+本仓库原创代码、文档、模板和图册采用 [MIT License](LICENSE)。案例视频的使用范围见 [案例说明](examples/showcase/README.md#使用范围)。方法参考及其边界见 [来源说明](references/sources.md)。外部链接指向的代码、商标、字体、音乐与视频按各自许可使用。
