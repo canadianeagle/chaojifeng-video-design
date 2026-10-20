@@ -14,6 +14,22 @@
 
 内含 8 类场景、7 种风格、12 项底层动效、64 项表达指导和 15 类组合配方。目录中的条目提供设计与实现指导，具体效果由实际工程完成。
 
+## 成片案例
+
+### 小圆角
+
+[![小圆角高亮预览](examples/showcase/rounded-corner-preview.gif)](https://raw.githubusercontent.com/mileson/chaojifeng-video-design/main/examples/showcase/rounded-corner-highlight.mp4)
+
+22 秒竖屏片段，将圆角滑动、九张批量处理与小卡环形展示串成一段。点击预览观看带声音的视频。
+
+### AI 闯关记
+
+[![AI 闯关记高亮预览](examples/showcase/ai-evolution-rap-preview.gif)](https://raw.githubusercontent.com/mileson/chaojifeng-video-design/main/examples/showcase/ai-evolution-rap-highlight.mp4)
+
+约 18.6 秒横屏高亮，将开机倒数与“升级闯关”副歌串联。点击预览观看带声音的视频。
+
+两部作品均在 Cursor 中协作制作。选段、方法对应和创作来源见 [案例说明](examples/showcase/README.md)。
+
 ## 安装
 
 将仓库克隆到你的 Agent 能加载的 Skill 目录。以 Codex 为例，目标目录不存在时执行下面的命令。
@@ -74,7 +90,7 @@ python3 scripts/build_music_atlas.py
 | `references/` | 导演、知识表达、镜头、声音与验收方法 |
 | `catalog/` | 场景、风格、动效、表达与配方目录 |
 | `templates/` | 计划、交付记录、声音事件表与其他模板 |
-| `examples/` | 计划与知识包结构示例 |
+| `examples/` | 计划、知识包结构示例与成片案例 |
 | `scripts/` | 查询、校验、探测、图册构建和离线测试 |
 | `assets/` | 本地可打开的表达与音乐图册 |
 | `evals/` | 尚未执行的创作评测题目 |
@@ -83,4 +99,4 @@ python3 scripts/build_music_atlas.py
 
 ## 许可与来源
 
-本仓库原创代码、文档、模板和图册采用 [MIT License](LICENSE)。方法参考及其边界见 [来源说明](references/sources.md)。外部链接指向的代码、商标、字体、音乐与视频按各自许可使用。
+本仓库原创代码、文档、模板和图册采用 [MIT License](LICENSE)。案例视频与预览的使用范围见 [案例说明](examples/showcase/README.md#使用范围)。方法参考及其边界见 [来源说明](references/sources.md)。外部链接指向的代码、商标、字体、音乐与视频按各自许可使用。
