@@ -1,12 +1,11 @@
 # 成片案例
 
-两段从实际作品中剪出的高亮，分别展示产品功能与音乐叙事的表达方式。点击播放器即可观看带声音的视频。
+两段从实际作品中剪出的高亮，分别展示产品功能与音乐叙事的表达方式。点击播放器即可观看，点击音量按钮开启原声。
 
 ## 小圆角
 
 https://github.com/user-attachments/assets/d87f8264-0a95-40d6-adbb-4e7e0afa32d3
 
-[观看带声音的高亮片段](https://github.com/user-attachments/assets/d87f8264-0a95-40d6-adbb-4e7e0afa32d3)
 
 同一组九张小卡先随滑块变圆，再进入批量处理界面，最后组成环形展示。歌词、字幕和画面动作围绕“边角变温柔”推进，让功能变化有明确的视觉结果。
 
@@ -18,7 +17,6 @@ https://github.com/user-attachments/assets/d87f8264-0a95-40d6-adbb-4e7e0afa32d3
 
 https://github.com/user-attachments/assets/bced29b5-a55a-4f92-85a5-865c6730752a
 
-[观看带声音的高亮片段](https://github.com/user-attachments/assets/bced29b5-a55a-4f92-85a5-865c6730752a)
 
 从开机、倒数和标题落点，切到“升级闯关”的副歌。进度条、阶梯、逐字字幕与节拍共同推进，用同一个闯关母题连接开场和段落转折。
 
