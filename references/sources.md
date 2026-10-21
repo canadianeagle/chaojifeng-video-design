@@ -88,3 +88,26 @@ visual.target-callout为新增指导，camera.focus-frame/text.semantic-emphasis
 | 公众号文章与评论区（用户提供） | 新手四问、桥接、读音词典、长片分块、模型边界与延伸阅读、事实核查需求 | 无公开链接；评论是个人经验，不作统计结论 |
 
 领域起点表中标“种子”的来源没有读过原文；用到时先核版本、条款与现行状态，再把 `status` 改为 `verified`。七层结构、分档时长、关系类型与载体原型表、证据板、真值账本分类与检查码都是本 Skill 的归纳或设计，没有经过观众实验。目录里 `knowledge.*` 的验证状态保持 guidance/authored，不能因为示例通过结构检查而升级。
+
+## 音乐推进知识科普
+
+后续用户确认配方显示名为“概念知识科普”，沿用`knowledge-music-explainer`稳定ID。当前神曲作为配方内初始默认，候选与默认可扩展、更换；用户指定优先，按所选新曲反推编排，不把初始默认曲硬绑为全局默认。默认选曲不重复询问，单次选择、加入候选、更换默认分别处理；原音源与未验证状态保持，选择工具不冒充测拍或听审。
+
+2026-10-21，用户提供本机《Vibe知识大赏保姆级教程》并确认扩展，随后明确要求支持“一次性完成，不需要先试片”。[科普编排](knowledge-music-direction.md)和`knowledge-music-explainer`将片内“定规格、音乐卡点、关键词乐器音效、先试片再分段修改”适配为字幕／旁白双分支、分层同步和可选交付节奏。一次性交付不设置试片确认门禁，最终检查与必要返修仍完成。
+
+观察来自205.056秒文件的联系表、关键帧与片内字幕，未完成整片连续视听；作者模型、成本、流量自述未独立核验。音乐地图、可选任务表、时序校验与效果闭环为原创设计，不把113 BPM、固定10秒或某模型升为默认。参考[AudioLabs速度与拍点](https://www.audiolabs-erlangen.de/resources/MIR/FMP/C6/C6S2_TempoBeat.html)和[Cambridge多媒体学习原则](https://www.cambridge.org/core/books/abs/cambridge-handbook-of-multimedia-learning/principles-for-reducing-extraneous-processing-in-multimedia-learning/F29A19FCD34C542806F736E0661C05F5)补充边界；页面摘要与检索内容支持原则，不宣称已复现实验或证明平台留存提升。原片、私有对话和音乐文件不分发；配方预览、导出、听审与观众效果仍分别记实际状态。
+
+## 产品音乐叙事与创作过程研究
+
+用户于2026-10-20确认，将一部产品音乐短片的过程研究提炼为 [产品音乐叙事](product-music-story.md)、[素材选择](asset-routing.md)、[开场设计](opening-design.md) 和可选声画镜头笔记。研究对照了三次实质创作指令、早晚版本、分镜、真实素材清单、歌曲与事件表、关键场景代码及交付更正；抽看最终关键帧与全片采样，最终文件哈希与交付记录一致。完整私有研究留在用户项目，本Skill不分发聊天、个人路径、人物图像、歌词、声音或项目工程。
+
+一部作品提供了做法与失败条件，未证明跨产品适用或传播提升。案例存在平台笔记读取失败、部分逐字时间由句级识别插值、歌曲局部重绘未听审、抽样口径改变导致运动量数字不同等限制；不把声音事件表、ASR无词、图册预览或结构校验当作听感/审美通过。目录配方保持guidance，新预览与导出状态为not_run，不继承原工程测量或旧版截图的验收。
+
+素材与执行接口参考了本机Eagle、平台图片采集、media-use、imagegen、HyperFrames、ai-avatar-narration、motion-effect-distiller和媒体处理Skill的相关说明，只抽取职责与通用工件，不复制其实现、资产、固定默认值、安装或供应商依赖。未在本轮逐项运行这些能力；宿主用到时按当前说明与授权确认实际可用性。内置生图与CLI选择服从宿主规则，不把一个工具写成通用前提。
+
+外部旁证：
+
+- [TikTok Creative Codes](https://ads.tiktok.com/business/en/blog/creative-best-practices-top-performing-ads)：结构、声音、早期价值表达与编辑刺激的官方广告建议；2026-10-20读到页面，底层研究主要来自2020～2022年。
+- [TikTok 2025小企业创意手册](https://ads.tiktok.com/business/library/TikTok_SMB_Creative_Playbook_2025.pdf)：前3～6秒与创意组织的背景材料；2026-10-20读取。只作为该平台广告语境的参考，不证明其他渠道、片长、色彩或开场问句有效。
+
+相关性来自产品宣传与开场任务，时效性按上述版本和底层研究时间判断，权威性来自原始创作材料与官方指南的职责范围。访问人数、访问次数、点赞与评论数未知，不填0；未取得正文的其他检索结果不用于支撑方法。适配判断、声画分工和失败回退为本Skill原创归纳，仍需本次项目实际验证。

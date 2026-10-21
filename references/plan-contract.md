@@ -44,6 +44,8 @@ mode 为 recipe、compose 或 free。内置 scenario_id 见场景目录；自定
 
 音乐原曲的截取与落点按 [音乐导演](music-direction.md) 写独立music-cue-sheet.json；source_in/out属于原曲，timeline_start/end属于整片，不能混用。实际裁剪/混音文件仍走上述assets/audio_cues合同，不把候选cue ID当成已经存在的音频文件。
 
+知识科普可用可选 [声画任务表](../templates/knowledge-music-score.json) 与 `explainer_timing_audit.py`：按当前计划哈希引用已有scene/element/beat/claim/layer和audio cue，不新增主计划必填字段；direct/staged只记录用户要求的交付节奏。音乐源锚点按cue sheet派生到整片，正向偏移表示声音较晚，阅读窗从文字完整可读的beat到退出beat。此检查只覆盖声明的排程，不能证明实测拍点、像素可读或听感；字段见 [科普编排](knowledge-music-direction.md)。
+
 动态标注可直接使用原elements/motions；复杂的截图裁切、相机跟随或多段强调可另存annotation-track.json，详见 [视觉强调](visual-emphasis.md) 与 [轨道模板](../templates/annotation-track.json)。它记录源坐标、屏幕坐标、完整目标/排除区域、保护区和绝对时间，可用独立工具检查。`--plan`可另核scene/element引用；原计划不新增必填字段，轨道也不自动驱动执行器或升高视觉验收状态。
 
 ## 交付清单
@@ -88,6 +90,8 @@ catalog/scenarios.json、styles.json、motions.json 均为 {"schema_version":1,"
 - design.expression_ids 可选，为目录中 expression ID 数组；design.recipe_id 可选，为一个 recipe ID。自由创作可省略。引用只说明选择，不能自动调用效果、排时钟、创建素材或提升验证状态。
 
 catalog/expressions.json 和 recipes.json 使用同样 schema_version/items 与通用项字段。expression 另带 layer/tier/status、inputs、parameters、composition、required_capabilities、existing_motion_ids、verification_questions、source_relation；status=guidance，设计控制不冒充执行API。recipe 另带 scenario_ids/style_ids/motion_ids/expression_ids 与 story_steps。scenario_ids 是推荐场景，不是排他的引擎支持清单；跨场景借用时解释适配并重查事实与能力，脚本给提醒而不阻断。场景可附 expression_ids/recipe_ids；脚本验证这些引用。配方与表达是指导，不把来源视频登记为本机通过。
+
+recipe可选`music_policy`：`candidate_track_ids`为非空无重复曲目ID数组，`default_track_id`须属于该池，`planning_mode`为music_first/content_first/adaptive，`default_requires_confirmation`为布尔值。目录检查其结构与音乐库引用，旧配方省略该字段仍适用。`music_library.py select --recipe ID`按用户指定、项目已选、配方默认解析；`--track`允许显式选择池外库内曲目，`--source-file`允许项目内新音源，两者均不修改默认与候选。所选源缺失或哈希／时长不符时阻断，不静默替换；时长与哈希检查不能证明听感或使用范围。
 
 ## 知识包扩展（保持 schema_version=1）
 

@@ -176,6 +176,10 @@ def catalog(kind, root=None, _check_refs=True):
         elif kind == "recipe":
             for field in ["scenario_ids", "style_ids", "motion_ids", "expression_ids"]:
                 strings(item.get(field), where + "." + field, True)
+            if "music_policy" in item:
+                from _recipe_music import validate_policy
+                errors = validate_policy(item["music_policy"])
+                require(not errors, where + ".music_policy", "; ".join(errors))
             steps = item.get("story_steps")
             require(isinstance(steps, list) and bool(steps), where + ".story_steps", "expected nonempty steps")
             step_ids = set()
@@ -201,6 +205,15 @@ def catalog(kind, root=None, _check_refs=True):
                 strings(item[field], where + "." + field, True)
         result[item["id"]] = item
     if _check_refs:
+        # Optional music policy is recipe-owned; legacy recipes need no music catalog.
+        music_owners = [item for item in result.values() if kind == "recipe" and "music_policy" in item]
+        if music_owners:
+            from _recipe_music import validate_policy
+            music_data = load_json(Path(root or CATALOG_DIR) / "music.json")
+            music_ids = {row["id"] for row in music_data["items"]}
+            for item in music_owners:
+                errors = validate_policy(item["music_policy"], music_ids)
+                require(not errors, item["id"] + ".music_policy", "; ".join(errors))
         reference_kinds = {"scenario_ids": "scenario", "style_ids": "style", "motion_ids": "motion",
                            "existing_motion_ids": "motion", "expression_ids": "expression", "recipe_ids": "recipe"}
         cache = {kind: result}

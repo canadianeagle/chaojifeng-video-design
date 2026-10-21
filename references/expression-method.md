@@ -1,6 +1,6 @@
 # 从表达指导组合到实现
 
-原有 motion 目录提供12种属性变化；expression 目录提供64项跨层表达指导（含11项知识讲解层、14项发布片元素）；recipe目录提供15类组合起点。新层不替换底层稳定ID，不把来源视频或提示词当可执行插件。
+原有 motion 目录提供12种属性变化；expression 目录提供64项跨层表达指导（含11项知识讲解层、14项发布片元素）；recipe目录提供17类组合起点。新层不替换底层稳定ID，不把来源视频或提示词当可执行插件。
 
 ## 按问题查询
 
@@ -37,7 +37,7 @@ python3 SKILL_ROOT/scripts/catalog.py --kind recipe list --scenario brand-film
 ## 落地顺序
 
 1. 确认它帮助哪条故事节拍或信息关系；不适合就跳过目录自由设计。
-2. 将语义参数变成项目可执行的时间、坐标、材质、声音与输入。复杂效果先试短段。
+2. 将语义参数变成项目可执行的时间、坐标、材质、声音与输入。复杂效果可先试短段；明确direct时直接制作整片并内部检查修复，不强制试片。
 3. 用已有 motion 或项目实现承载；没有现成动效的，用 custom 并填写 channels、implementation、composition_reason 等原合同要求。
 4. 将选择记在 design.expression_ids、design.recipe_id 或镜头说明中。目录引用只验证选择是否存在，不自动排镜头或驱动渲染器。
 5. 实际核验关键帧、连续运动、声音与语义。来源只演示局部时，不能借此宣布全套实现通过。
@@ -48,13 +48,15 @@ python3 SKILL_ROOT/scripts/catalog.py --kind recipe list --scenario brand-film
 
 ## 验证范围
 
-目录初始为 guidance，design=authored；preview/exported 依实际范围登记。小型索引示意不覆盖全部条目。64项不等于64个已渲染特效，15类配方也不保证任意组合。新增源不能自动提升历史验证状态，升级需保留反例与失效条件。标注轨道与检查范围见 [视觉强调](visual-emphasis.md)；采样几何无碰撞不等于所有帧、字形和语义已经通过。
+目录初始为 guidance，design=authored；preview/exported 依实际范围登记。小型索引示意不覆盖全部条目。64项不等于64个已渲染特效，17类配方也不保证任意组合。新增源不能自动提升历史验证状态，升级需保留反例与失效条件。标注轨道与检查范围见 [视觉强调](visual-emphasis.md)；采样几何无碰撞不等于所有帧、字形和语义已经通过。
 
 ## 知识讲解的组合入口
 
 讲解抽象知识或资讯时，先读 [物即解释](knowledge-visualization.md)，再选配方：机制类用 `object-explainer`，要把一个概念分层讲透用 `layered-concept-reveal`，资讯用 `evidence-board-brief`。11项 `knowledge.*` 表达是设计指导：它们规定什么要写进 [知识包](knowledge-pack.md)、什么要在画面里兑现，不是已安装的动效。前半段的行业规范、术语与受控表达见 [行业规范先行](domain-standards.md)，层次安排见 [逐层递进](layered-reveal.md)。
 
 选了 `knowledge.*` 表达就写 `plan.knowledge`，并运行 `validate_plan.py`；这些检查只核结构、引用和文字的机械问题，不证明事实为真、比喻贴切或观众看懂。
+
+概念知识科普用 `knowledge-music-explainer`，按 [科普编排](knowledge-music-direction.md) 选择字幕／旁白与direct／staged，从配方音乐池、当前默认或用户指定曲目反推声画编排，沿现有知识包和声音合同组织，不把试片确认设为通用门禁。
 
 ## 产品表达的组合入口
 
@@ -63,3 +65,5 @@ python3 SKILL_ROOT/scripts/catalog.py --kind recipe list --scenario brand-film
 ## 发布片的组合入口
 
 做30秒级的产品发布片或多功能串联时，先读 [发布片语法](launch-film-grammar.md)，再选配方：整片情绪弧用 `launch-film-arc`，三到四个功能逐章证明用 `feature-chapter-reel`；`product-task-proof` 仍负责“真实任务与证据”的最小结构，两者不重复。14项发布片元素同样是设计指导，不是已安装动效：它们给出观察依据、迁移写法和失败信号，数值只是来自一部参考片的起点。声音一律先写事件表再排时间线，用 `audio_event_audit.py` 核对，测的是起音时刻，不是听感。研究另一部参考片的方法见 [参考片研究](reference-film-study.md)。
+
+产品宣传由歌词和乐段共同讲述时，选择 [产品音乐叙事](product-music-story.md) 的 `product-music-story`，沿现有动作、主体连续和声音表达组合；先核片型适配与功能主张，再选择素材、开场和实际声音。它跨用产品、品牌与音乐场景，不新增底层动效或必填合同；新配方仍待实际成片与效果验证。

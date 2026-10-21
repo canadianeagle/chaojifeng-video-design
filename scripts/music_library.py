@@ -9,6 +9,7 @@ import json
 import math
 import os
 from pathlib import Path
+from _recipe_music import select_music, select_source_file, source_info, validate_policy
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -141,19 +142,65 @@ def validate_sheet(sheet,c,r=None):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('action',choices=['search','get','health','validate-catalog','validate-sheet'])
+    p.add_argument('action',choices=['search','get','select','health','validate-catalog','validate-sheet'])
     p.add_argument('id_or_path',nargs='?');p.add_argument('--catalog',default=str(ROOT/'catalog/music.json'))
     p.add_argument('--registry');p.add_argument('--scenario');p.add_argument('--emotion');p.add_argument('--role')
     p.add_argument('--energy',choices=['low','mid','high']);p.add_argument('--query',default='')
     p.add_argument('--min-duration',type=float,default=0);p.add_argument('--narration',action='store_true')
     p.add_argument('--avoid-bright',action='store_true');p.add_argument('--limit',type=int,default=10)
+    p.add_argument('--recipe',help='recipe ID: filter search to its pool or resolve select')
+    p.add_argument('--recipes',default=str(ROOT/'catalog/recipes.json'),help='recipe catalog for select')
+    choice=p.add_mutually_exclusive_group()
+    choice.add_argument('--track',help='explicit selected track ID, including tracks outside the recipe pool')
+    choice.add_argument('--source-file',help='explicit local audio file; project-only, no catalog/default mutation')
+    choice.add_argument('--silent',action='store_true',help='preserve explicit no-music choice')
+    choice.add_argument('--original-audio',action='store_true',help='preserve explicit original-audio choice')
+    p.add_argument('--project-track',help='previously selected project track ID')
     args=p.parse_args()
     try:
         if args.limit<=0 or not math.isfinite(args.min_duration) or args.min_duration<0:raise ValueError('invalid limit/min-duration')
         c=load(args.catalog);errors=validate_catalog(c)
         if errors:raise ValueError('; '.join(errors))
-        r=registry(args,c)
-        if args.action=='search':out={'library_id':c['library_id'],'items':search(c,args)}
+        r=registry(args,c) if args.action != 'select' else None
+        recipe=None
+        if args.recipe and args.action in ('search','select'):
+            recipes=load(args.recipes)
+            matches=[row for row in recipes['items'] if row['id']==args.recipe]
+            if len(matches)!=1:raise ValueError('unknown or duplicate recipe ID')
+            recipe=matches[0]
+        if args.action=='search':
+            view=c
+            if recipe:
+                errors=validate_policy(recipe.get('music_policy'),{row['id'] for row in c['items']})
+                if errors:raise ValueError('; '.join(errors))
+                pool=set(recipe['music_policy']['candidate_track_ids'])
+                view=dict(c,items=[row for row in c['items'] if row['id'] in pool])
+            out={'library_id':c['library_id'],'items':search(view,args)}
+            if recipe:out.update(recipe_id=recipe['id'],default_track_id=recipe['music_policy']['default_track_id'])
+        elif args.action=='select':
+            if not args.recipe:raise ValueError('--recipe is required for select')
+            if args.source_file:
+                out=select_source_file(recipe,c,args.source_file)
+            else:
+                mode='silent' if args.silent else 'original' if args.original_audio else 'auto'
+                out=select_music(recipe,c,args.track,args.project_track,mode)
+                tid=out['selected_track_id']
+                if tid is None:
+                    out['status']='ready'
+                else:
+                    r=registry(args,c)
+                    asset=(r or {}).get('assets',{}).get(tid,{})
+                    if not asset.get('path'):
+                        out.update(status='blocked',source_state='missing',error='selected track has no registered local source; no automatic substitution')
+                    else:
+                        try:
+                            info=source_info(asset['path'])
+                            state='hash_mismatch' if info['sha256']!=out['source_sha256'] else 'duration_mismatch' if abs(info['duration_seconds']-out['duration_seconds'])>.01 else 'ready'
+                            out.update(local_asset=info,source_state=state,status='ready' if state=='ready' else 'blocked')
+                            if state!='ready':out['error']='selected source does not match catalog; no automatic substitution'
+                        except (OSError,ValueError) as exc:
+                            out.update(status='blocked',source_state='unavailable',error=str(exc))
+            out['library_id']=c['library_id']
         elif args.action=='get':
             matches=[t for t in c['items'] if t['id']==args.id_or_path]
             if not matches:raise ValueError('unknown track ID')
@@ -172,7 +219,7 @@ def main():
                 health.append({'track_id':t['id'],'state':state})
             out={'status':'ready' if all(x['state']=='ready' for x in health) else 'partial','assets':health}
         print(json.dumps(out,ensure_ascii=False,indent=2))
-        return 2 if out.get('status')=='failed' else 0
+        return 2 if out.get('status') in ('failed','blocked') else 0
     except (OSError,ValueError,KeyError,TypeError) as e:
         print(json.dumps({'status':'failed','error':str(e)},ensure_ascii=False));return 2
 

@@ -47,7 +47,7 @@
         "id": "claim-example",
         "text": "替换为一条要说或要显示的事实",
         "kind": "illustrative",
-        "disclosure": "替换为画面里怎样披露它只是示意；有来源时改为 sourced 并写 source"
+        "disclosure": "填写内部记录：用途、依据与不能支持的结论；不渲染制作身份角标。有来源时改为 sourced 并写 source"
       }
     ]
   },

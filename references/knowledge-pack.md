@@ -61,7 +61,7 @@ python3 SKILL_ROOT/scripts/controlled_lint.py --text-file script.txt --profile s
 | `truth.claims[]` | `id` `text` `kind` 必 | `sourced` `derived` `illustrative` |
 | | `sourced` | `standard_ref` 或 `source`；资讯包还要 `as_of` |
 | | `derived` | `derivation` 与 `from`（来源 claim 的 ID，不得成环） |
-| | `illustrative` | `disclosure`：画面里怎样披露 |
+| | `illustrative` | `disclosure`：内部记录示意用途、依据与不能支持的结论；不渲染为对外制作标签 |
 | | `value` `unit` `as_of` `used_in` | 数值要有单位；日期；用到它的旁白或元素 ID |
 | `truth.unknown[]` | `id` `text` `status` 必 | `unconfirmed` `disputed` `unknown`；`reason` 写为什么还没确认。资讯包必填，没有时写 `truth.unknown_none_reason` |
 | `layers[]` | `id` `level` `goal` `new_load` `exit_test` 必 | `level` 为 `L0` 到 `L6`；末层必须是 `L6` |

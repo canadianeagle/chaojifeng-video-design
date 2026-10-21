@@ -62,6 +62,8 @@ passed写观察或证据路径。设计示意、源码存在、预览、导出�
 
 ## 知识讲解与资讯的审片
 
+使用 `knowledge-music-explainer` 时，按 [科普编排](knowledge-music-direction.md) 分别核领拍方式、知识增量、文字完整出现后的阅读窗、可见结果落点、音乐映射、提示密度及同曲接缝。`explainer_timing_audit.py` 只验证任务表覆盖的排程，不替代实际拍点、像素、音效起音、听感或理解检查。direct无试片确认门禁，最终内部检查与必要返修仍须完成；staged仅在用户指定节点等待。没有真实观众与平台反馈时分别记not_run，不能由机器检查宣称有吸引力。
+
 用了 [知识包](knowledge-pack.md) 时，把 `checks` 当作审片记录的结构：terminology 查术语一致与读音，accuracy 对账真值账本与原始来源，novice_read、peer_read、expert_read 分别请新手、同行和懂行的人读。三类读者各自独立描述“看到了什么、学到了什么、哪里不对”，再对照导演意图；同一个 Agent 自查要写明是自检。没真做过的保持 `not_run`，“看起来对”不能写成 `passed`。
 
 | 改动 | 重验依赖 |

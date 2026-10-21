@@ -17,7 +17,7 @@
       ],
       "constraints": [
         "先确认版本范围和覆盖平台，功能主张关联来源。",
-        "截图、录屏与重建分别标注，fixture不冒充线上结果。"
+        "工程与交付记录区分截图、录屏和重建，fixture不冒充线上结果；观众侧说明按误认风险、用户与实际渠道要求决定。"
       ],
       "fallback": "组件不可运行时用已授权录屏或截图聚焦；缺依据则先交分镜。",
       "verification": {
@@ -81,7 +81,8 @@
         "product-task-proof",
         "sensory-before-after",
         "launch-film-arc",
-        "feature-chapter-reel"
+        "feature-chapter-reel",
+        "product-music-story"
       ],
       "expression_ids": [
         "narrative.shared-subject",
@@ -127,7 +128,7 @@
       "applicable_inputs": [
         "可检验的学习目标",
         "受众已知与未知",
-        "概念依据或示意声明",
+        "概念依据或内部示意用途记录",
         "旁白要求"
       ],
       "counterexamples": [
@@ -138,7 +139,7 @@
         "先定义要解释的关系，布局匹配因果/对比/步骤。",
         "示意数据明确虚构，不用箭头直接断言因果。",
         "涉及专业领域时先找行业标准与共识并登记状态，再统一术语与表达（knowledge.controlled-register）。",
-        "每个数字先进真值账本；示意内容在画面披露。"
+        "每个数字先进真值账本；示意用途与依据留内部，不生成制作标签。"
       ],
       "fallback": "关系过密则拆镜或静态图逐段聚焦；无音频时保留估时未验状态。",
       "verification": {
@@ -158,7 +159,7 @@
       "required_inputs": [
         "可检验的学习目标",
         "受众已知与未知",
-        "概念依据或示意声明",
+        "概念依据或内部示意用途记录",
         "旁白要求"
       ],
       "narrative_options": [
@@ -205,7 +206,8 @@
         "semantic-type",
         "data-comparison",
         "object-explainer",
-        "layered-concept-reveal"
+        "layered-concept-reveal",
+        "knowledge-music-explainer"
       ],
       "expression_ids": [
         "narrative.follow-unit",
@@ -688,7 +690,8 @@
       ],
       "recipe_ids": [
         "image-to-hero",
-        "brand-motif-film"
+        "brand-motif-film",
+        "product-music-story"
       ],
       "expression_ids": [
         "visual.media-ring",
@@ -784,7 +787,8 @@
       "recipe_ids": [
         "music-event-performance",
         "semantic-type",
-        "sensory-before-after"
+        "sensory-before-after",
+        "product-music-story"
       ],
       "expression_ids": [
         "sound.beat-map",
