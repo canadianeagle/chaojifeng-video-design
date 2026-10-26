@@ -173,5 +173,12 @@
     ],
     "shared_runtime": "vendor/lemo-opuscar",
     "assets": "第三方素材按 demo/CREDITS 查找，具体项目另行准备与核验。"
+  },
+  "gallery": {
+    "poster": "preview.jpg",
+    "poster_sha256": "543a4acf51a6e7f8c4896f60f847db86f605c6858b9e16c301f71bc3222a10d1",
+    "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/ascii-crt_0.jpg",
+    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/ascii-crt.mp4",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#ascii-crt"
   }
 }

@@ -174,5 +174,12 @@
     ],
     "shared_runtime": "vendor/lemo-opuscar",
     "assets": "第三方素材按 demo/CREDITS 查找，具体项目另行准备与核验。"
+  },
+  "gallery": {
+    "poster": "preview.jpg",
+    "poster_sha256": "b052cd84ed69898732debd293009cab02786b4fc7728dccb9d02a9a1192b47e5",
+    "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/risograph_0.jpg",
+    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/risograph.mp4",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#risograph"
   }
 }

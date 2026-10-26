@@ -113,6 +113,14 @@ class StylePackageTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'hash mismatch'):
             verify_sources(self.collection)
 
+    def test_optional_gallery_requires_local_poster_and_safe_video(self):
+        self.package(gallery={'poster':'missing.jpg'})
+        with self.assertRaisesRegex(ValueError,'missing or escaping'):
+            load_registry([self.collection])
+        self.package(gallery={'video':'javascript:alert(1)'})
+        with self.assertRaisesRegex(ValueError,'HTTPS'):
+            load_registry([self.collection])
+
     def test_ready_runtime_needs_actual_style_capabilities(self):
         plan=json.loads((ROOT/'templates/plan.json').read_text())
         plan['design']['style_id']='opuscar-glass-product'

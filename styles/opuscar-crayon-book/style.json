@@ -173,5 +173,12 @@
     ],
     "shared_runtime": "vendor/lemo-opuscar",
     "assets": "第三方素材按 demo/CREDITS 查找，具体项目另行准备与核验。"
+  },
+  "gallery": {
+    "poster": "preview.jpg",
+    "poster_sha256": "e47c200812b180a0fb21bc9e5b457de80ead855de2f056a4c62766b13bd9ca8f",
+    "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/crayon-book_0.jpg",
+    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/crayon-book.mp4",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#crayon-book"
   }
 }

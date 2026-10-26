@@ -6,6 +6,7 @@ import math
 import os
 import re
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 ID = re.compile(r"^[a-z][a-z0-9]*(?:[-_][a-z0-9]+)*$")
@@ -92,6 +93,28 @@ def load_registry(extra=None, bundled=None):
                 inside(path.parent, relative)
             for relative in references:
                 inside(path.parent, relative)
+            if 'gallery' in item:
+                gallery=item['gallery']
+                if not isinstance(gallery,dict):
+                    raise ValueError(f'{ident}.gallery: expected an object')
+                if gallery.get('poster'):
+                    poster=inside(path.parent,gallery['poster'])
+                    if poster.suffix.lower() not in {'.jpg','.jpeg','.png','.webp','.gif'}:
+                        raise ValueError(f'{ident}.gallery.poster: unsupported image format')
+                if gallery.get('video'):
+                    video=gallery['video']
+                    parsed=urlparse(video) if isinstance(video,str) else None
+                    if parsed is None:
+                        raise ValueError(f'{ident}.gallery.video: expected string')
+                    if parsed.scheme:
+                        if parsed.scheme!='https' or not parsed.hostname or parsed.username or parsed.password:
+                            raise ValueError(f'{ident}.gallery.video: expected HTTPS without userinfo')
+                    else:
+                        inside(path.parent,video)
+                if gallery.get('source_url'):
+                    parsed=urlparse(gallery['source_url'])
+                    if parsed.scheme!='https' or not parsed.hostname or parsed.username or parsed.password:
+                        raise ValueError(f'{ident}.gallery.source_url: expected an HTTPS source page')
             raw[ident], locations[ident] = item, path.parent
     resolved, visiting = {}, []
 

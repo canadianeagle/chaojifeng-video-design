@@ -28,4 +28,15 @@ def verify_sources(root=ROOT):
             raise ValueError(f"upstream license mismatch: {folder}")
         for item in style['files']:
             verify(folder,item['path'],item['sha256'])
-    return dict(status='passed',files=checked,styles=len(manifest['styles']),revision=manifest['revision'],scope='source-integrity-only')
+    frames=root/'assets/gallery/reference-frames.json'
+    frame_count=0
+    if frames.is_file():
+        frame_manifest=read_json(frames)
+        if frame_manifest.get('revision')!=manifest['revision']:
+            raise ValueError('gallery reference frame revision mismatch')
+        if len({f['style_id'] for f in frame_manifest['frames']})!=len(frame_manifest['frames']):
+            raise ValueError('duplicate gallery reference frame')
+        for frame in frame_manifest['frames']:
+            verify(root,frame['path'],frame['sha256'])
+            frame_count+=1
+    return dict(status='passed',files=checked,styles=len(manifest['styles']),reference_frames=frame_count,revision=manifest['revision'],scope='source-integrity-only')

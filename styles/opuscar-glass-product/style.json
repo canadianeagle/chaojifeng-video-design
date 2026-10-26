@@ -175,5 +175,12 @@
     ],
     "shared_runtime": "vendor/lemo-opuscar",
     "assets": "第三方素材按 demo/CREDITS 查找，具体项目另行准备与核验。"
+  },
+  "gallery": {
+    "poster": "preview.jpg",
+    "poster_sha256": "d403e6074cc0e974186482c4d058c4297e5ec889f6c02b97190ea9e535206f75",
+    "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/glass-product_0.jpg",
+    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/glass-product.mp4",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#glass-product"
   }
 }

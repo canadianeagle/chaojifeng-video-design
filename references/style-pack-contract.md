@@ -28,6 +28,8 @@ styles/<id>/
 
 `implementation` 可登记 `status`、包内相对路径数组 `entrypoints`、共享技术来源和缺失素材。`reference_files` 声明包内参考文件。导入的 `reference-source` 只表示源码已收录；它不证明依赖齐备、可运行、上镜或整片导出。包内文件路径必须存在且不逃出包目录；这些字段从不作为 shell 命令执行。
 
+可选 `gallery` 提供画廊素材：`poster` 是包内 JPEG／PNG／WebP／GIF 相对路径，`poster_sha256` 为可选完整性哈希；`video` 为包内视频或不含用户凭证的 HTTPS 地址，`source_url` 为 HTTPS 来源页。查目录只检查路径和类型；图像内容与哈希在画廊生成或来源完整性检查时核对。HTML 内嵌图像，视频点击后才加载。gallery 字段与包内图像不从 extends 自动继承，也不改变 preview／exported 的验证状态。
+
 ## 派生与借用
 
 `extends` 只有一个基底 ID，允许多层派生。字典逐键覆盖，数组整体替换；变化要在 STYLE.md 写明理由，尤其不能无意丢掉阅读、材质或能力限制。

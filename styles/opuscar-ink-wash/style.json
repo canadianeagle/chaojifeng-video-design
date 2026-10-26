@@ -174,5 +174,12 @@
     ],
     "shared_runtime": "vendor/lemo-opuscar",
     "assets": "第三方素材按 demo/CREDITS 查找，具体项目另行准备与核验。"
+  },
+  "gallery": {
+    "poster": "preview.jpg",
+    "poster_sha256": "f12f7f564254ddc2507ab145ee2e2be47df021bfe9c9d440f0d9062a7d90bb20",
+    "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/ink-wash_0.jpg",
+    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/ink-wash.mp4",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#ink-wash"
   }
 }

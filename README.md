@@ -18,7 +18,7 @@
 
 保留原有 7 种风格，纳入 Lemo-Opuscar 的 59 种风格，包括水墨、水彩、版画、动态排版、字幕新闻、数据叙事、像素、玻璃产品等 11 个来源分类。每包分别提供风格规则、案例说明、原生动作索引与可复用文本源码；故事、台词和时间线由当前作品决定。
 
-[浏览全部风格](styles/README.md) · [本地表达图册](assets/gallery/index.html) · [风格包合同](references/style-pack-contract.md)
+[浏览全部风格](styles/README.md) · [可视化风格画廊](assets/gallery/index.html) · [风格包合同](references/style-pack-contract.md)
 
 ```sh
 python3 scripts/stylepacks.py resolve 中国水墨
@@ -121,7 +121,7 @@ python3 scripts/validate_plan.py examples/product-demo.plan.json
 python3 -m unittest discover -s scripts -p 'test_*.py'
 ```
 
-用浏览器打开 [表达图册](assets/gallery/index.html) 查看设计示意，也可以直接阅读 [Skill 入口](SKILL.md)、[计划合同](references/plan-contract.md) 和 [执行与交付](references/runtime-and-delivery.md)。图册与计划示例用于理解和检查结构，实际作品仍需渲染、观看与试听。
+打开 [风格画廊](assets/gallery/index.html)，用代表画面浏览全部 66 种风格，可搜索、按分类或视频任务筛选、并排对比，并复制当前风格的创作指令。59 张来源代表帧已嵌入单个 HTML；原有 7 个基础风格按实际参数呈现。需要动作与配方时进入 [表达目录](assets/gallery/expressions.html)。也可以直接阅读 [Skill 入口](SKILL.md)、[计划合同](references/plan-contract.md) 和 [执行与交付](references/runtime-and-delivery.md)。图册与计划示例用于理解和检查结构，实际作品仍需渲染、观看与试听。
 
 ## 音乐和声音
 
@@ -162,7 +162,7 @@ python3 scripts/build_music_atlas.py
 | `templates/` | 计划、交付记录、声音事件表与其他模板 |
 | `examples/` | 计划、知识包结构示例与成片案例 |
 | `scripts/` | 查询、校验、探测、图册构建和离线测试 |
-| `assets/` | 本地可打开的表达与音乐图册 |
+| `assets/` | 可视化风格画廊、动效配方目录和音乐图册 |
 | `evals/` | 尚未执行的创作评测题目 |
 
 检查通过只说明对应结构或测量条件成立。画面、听感、事实与观众理解需要分别验收，未做的检查保留未验证状态。

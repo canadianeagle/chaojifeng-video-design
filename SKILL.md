@@ -19,7 +19,7 @@ description: 设计和制作产品演示、知识讲解（含 Rap／说唱）、
 | 要解决的问题 | 读取与动作 |
 | --- | --- |
 | 故事、镜头、声音、观众变化 | [DIRECTOR.md](DIRECTOR.md)，再按 [任务路由](references/task-routing.md) 加载相关方法 |
-| 选择、变体、借用或新增风格 | [风格包合同](references/style-pack-contract.md)，精确查询 ID／中文名／英文名；只读选中包的 STYLE.md 与其引用 |
+| 选择、变体、借用或新增风格 | 用 [风格画廊](assets/gallery/index.html) 看画面、来源样片与并排对比；按 [风格包合同](references/style-pack-contract.md) 精确查询 ID／中文名／英文名，只读选中包的 STYLE.md 与其引用 |
 | 工具、引擎、素材、实际制作 | [TECHNIQUE.md](TECHNIQUE.md)，能力探测后沿已有工程制作 |
 | 首次扩展、维护、导入与目录生成 | [MAINTAINING.md](MAINTAINING.md)，维护库与制作当前作品分别处理 |
 | 从计划走到成片 | [制作流程](references/production-workflow.md)、[计划合同](references/plan-contract.md)和[审片与修改](references/review-and-revision.md) |

@@ -25,10 +25,24 @@ python3 scripts/stylepacks.py build
 python3 scripts/stylepacks.py build --check
 python3 scripts/stylepacks.py validate --sources
 python3 scripts/build_gallery.py
+python3 scripts/build_gallery.py --check
 python3 -m unittest discover -s scripts -p 'test_*.py'
 ```
 
 style.json 是风格元数据唯一来源；catalog/styles.json 与 styles/README.md 由 build 生成，图册再由 catalog 构建。不手改生成区。生成内置目录始终排除外置项目与个人集合，防止其内容混入分发包。
+
+风格画廊为 assets/gallery/index.html，动效与配方目录保留在 expressions.html。前者从 styles-template.html 生成，后者从 template.html 生成。风格图像嵌入 HTML，单独复制 index.html 仍可浏览画面、筛选和比较；本地规则与动效链接沿原目录解析。视频仅在明确点击时加载，一个详情页只保留一个播放器，关闭详情时停止并释放。
+
+风格包可选 gallery.poster（包内图片）、poster_sha256、video（包内文件或 HTTPS）与 source_url（HTTPS）。新增包及图片后重新生成即可进入画廊，无需手改页面列表；缺少图片时使用当前颜色和图形参数。gallery 不从基底继承，来源图像与新包的实际效果分别记账。
+
+固定来源库的 59 张代表帧由 import_gallery.py 从相同提交的已核实本地 checkout 导入；仅取 styleboard/img/<slug>_0.jpg，不下载影片。导入后运行 stylepacks.py build 和 build_gallery.py。来源清单为 assets/gallery/reference-frames.json，完整性检查使用 stylepacks.py validate --sources。更新来源包后重新导入图像，避免重写元数据时遗漏 gallery 配置。
+
+```sh
+python3 scripts/import_gallery.py --source /path/to/inspected-checkout
+python3 -m unittest discover -s scripts -p test_gallery.py
+```
+
+交互逻辑检查是隔离测试，不替代实际浏览器布局、播放和移动端验收；网站操作继续使用宿主要求的 Chrome 路由，安全策略阻断时保留未验证范围，不改用其他浏览器绕过。
 
 ## 导入或更新上游
 
