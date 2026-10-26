@@ -2204,6 +2204,179 @@
         "planning_mode": "music_first",
         "default_requires_confirmation": false
       }
+    },
+    {
+      "id": "knowledge-rap-explainer",
+      "name": "嘻哈知识科普",
+      "intent": "用准确可唱的歌词推进知识，以真实素材、音乐段落和逐句声画任务形成直接进入主题的视听讲解。",
+      "status": "guidance",
+      "tier": "组合配方",
+      "scenario_ids": [
+        "knowledge-explainer",
+        "music-visual",
+        "news-brief"
+      ],
+      "inputs": [
+        "受众、可复述知识关系及事实与术语依据",
+        "歌词与主张ID、必要条件及禁止夸大内容",
+        "获准音轨或歌曲制作能力、资源上限与用户约束",
+        "事实画面的检索候选、使用范围与生成缺口",
+        "实际唱词、音轨哈希、量时粒度与唯一有效排程"
+      ],
+      "required_inputs": [
+        "受众、可复述知识关系及事实与术语依据",
+        "歌词与主张ID、必要条件及禁止夸大内容",
+        "获准音轨或歌曲制作能力、资源上限与用户约束",
+        "事实画面的检索候选、使用范围与生成缺口",
+        "实际唱词、音轨哈希、量时粒度与唯一有效排程"
+      ],
+      "story_steps": [
+        {
+          "id": "facts-and-lyrics",
+          "shot_purpose": "建立可复述关系与准确歌词",
+          "visual_action": "核事实、术语、条件和歌词主张，按层新增信息。",
+          "sound_role": "核专有词、断句与可唱负荷，不为押韵改事实。",
+          "checks": [
+            "每句有主张或明确情绪职责。",
+            "不把自报与推论唱成确定事实。"
+          ]
+        },
+        {
+          "id": "source-and-stage",
+          "shot_purpose": "给事实与比喻选择正确素材",
+          "visual_action": "先查原始资料，记录候选、权利和缺口，再补图表或非证据画面。",
+          "sound_role": "按内容留声音空间，不以音乐掩盖证据缺失。",
+          "checks": [
+            "生成图不冒充现场。",
+            "素材按运动余量和编辑需要准备。"
+          ]
+        },
+        {
+          "id": "cold-open",
+          "shot_purpose": "前三秒明确观看价值",
+          "visual_action": "首帧进入对象与场景，具体变化或后果在开场可见，正文兑现。",
+          "sound_role": "首句承载内容，不留无信息长前奏；剪辑核原声约束和接缝。",
+          "checks": [
+            "核实际导出的首句与字幕。",
+            "三秒设计不保证留存。"
+          ]
+        },
+        {
+          "id": "verse-explain",
+          "shot_purpose": "用乐句推进知识",
+          "visual_action": "按时间、因果、对照或机制展示证据与图形，主动作有落定。",
+          "sound_role": "用实际演唱窗口、关键词和重音安排动作；解释跨拍时留阅读。",
+          "checks": [
+            "逐句核实际唱词。",
+            "逐行核字幕与图示阅读。"
+          ]
+        },
+        {
+          "id": "hook-and-variation",
+          "shot_purpose": "回收核心认识并新增关系",
+          "visual_action": "副歌按需回收母题，重复增加代价、关系或证据，无新内容则删。",
+          "sound_role": "重音与段落承担不同任务，节奏旋律有疏密和释放。",
+          "checks": [
+            "不固定副歌、三幕或理想骨感结构。",
+            "辅助动作不抢主焦点。"
+          ]
+        },
+        {
+          "id": "bridge-and-close",
+          "shot_purpose": "转向边界并完整收束",
+          "visual_action": "按需展开反例与条件，以主体或因果接力回收开场。",
+          "sound_role": "声音接桥，间奏留消化窗，结尾尾音连续。",
+          "checks": [
+            "模型边界准确。",
+            "结尾不默认导流。"
+          ]
+        },
+        {
+          "id": "verify-and-revise",
+          "shot_purpose": "让实际产物满足必要要求",
+          "visual_action": "核当前音轨、字幕动作、运动极值、接缝和完整文件。",
+          "sound_role": "词音、声线、节奏旋律、混音接缝分别核；换音轨重置检查。",
+          "checks": [
+            "必要要求未解决保留候选。",
+            "未听审不判声音通过，不增加direct用户门禁。"
+          ]
+        }
+      ],
+      "expression_ids": [
+        "knowledge.truth-ledger",
+        "knowledge.controlled-register",
+        "knowledge.layered-reveal",
+        "knowledge.layer-bridge",
+        "knowledge.model-boundary",
+        "narrative.follow-unit",
+        "narrative.energy-arc",
+        "text.semantic-emphasis",
+        "text.read-then-move",
+        "sound.beat-map",
+        "sound.event-collision",
+        "sound.attention-mix",
+        "transition.match-cut",
+        "transition.occlusion-reveal",
+        "production.time-function",
+        "production.dwell-budget"
+      ],
+      "motion_ids": [
+        "reveal",
+        "highlight",
+        "state-swap",
+        "connect",
+        "trace",
+        "mask-wipe",
+        "hold"
+      ],
+      "style_ids": [
+        "vivid-collage",
+        "paper-editorial",
+        "mono-diagram",
+        "cinematic-photo"
+      ],
+      "constraints": [
+        "只在说唱讲知识的意图下自动选择，背景音乐科普与产品音乐叙事按目标分流。",
+        "事实、单位、数字与成立条件先核，押韵和画面不能扩大主张。",
+        "信息流默认首帧进入主题，前三秒给具体观看价值；原声锁定及其他媒介要求优先。",
+        "事实画面先检索原始素材，缺口有记录后补图表或生成非证据画面。",
+        "每句关联claim、lyric、音轨、scene、asset和beat，动作落定与阅读窗明确；时间由同一有效排程派生。",
+        "换音轨、删前奏、变速或重排后重新核唱词、字幕、动作、音效与下游时间。",
+        "局部拼修持续失败扩大到完整乐句或乐段；是否整首重做按当前用户约束决定。",
+        "不继承其他配方默认音乐，不固定BPM、时长、副歌次数、音色或引擎，不自动安装或付费。",
+        "必要要求未通过保留候选，结构、听审、理解和传播分别记账。"
+      ],
+      "fallback": "知识过密拆句拆镜或跨乐句；素材缺失用有依据图表或换镜头；拼接持续失败扩大修复范围，整首重做遵守当前约束；必需能力不足准确交代候选和缺口。",
+      "verification_questions": [
+        "每句实际唱词与事实是否对应，并保留数字、否定和条件？",
+        "事实画面是否先检索原始素材并核使用范围？",
+        "首帧与前三秒、首句与字幕是否进入同一主题？",
+        "关键词、重音、动作落定、逐行阅读及跨镜接力是否对应？",
+        "换音轨后是否重核全部受影响排程？",
+        "声音分项与必要要求是否成立，未听审与候选是否如实登记？"
+      ],
+      "verification": {
+        "design": {
+          "status": "authored",
+          "evidence": []
+        },
+        "preview": {
+          "status": "not_run",
+          "evidence": []
+        },
+        "exported": {
+          "status": "not_run",
+          "evidence": []
+        }
+      },
+      "source_refs": [
+        "../references/knowledge-rap-direction.md",
+        "../references/asset-routing.md",
+        "../references/opening-design.md",
+        "../references/sound-and-rhythm.md",
+        "../references/sources.md#说唱科普与成品反馈"
+      ],
+      "source_relation": "2026-10-25用户确认从同一作品的制作及多轮返修提炼。配方与失败检查为原创归纳；同源会话不作独立成功样本，不分发私人对话、声音或工程，不继承旧片测量与接受状态。"
     }
   ]
 }

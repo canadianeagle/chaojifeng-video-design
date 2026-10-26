@@ -17,7 +17,7 @@ def known(value, mapping):
     return isinstance(value, str) and value in mapping
 
 
-def validate_plan(plan, plan_path, catalog_dir=None, strict_assets=False, strict_timing=False, strict_knowledge=False):
+def validate_plan(plan, plan_path, catalog_dir=None, strict_assets=False, strict_timing=False, strict_knowledge=False, style_roots=None):
     r = Report()
     if not isinstance(plan, dict):
         r.error("plan_type", "$", "plan must be an object")
@@ -33,7 +33,7 @@ def validate_plan(plan, plan_path, catalog_dir=None, strict_assets=False, strict
     if plan.get("mode") not in ["recipe", "compose", "free"]:
         r.error("mode", "$.mode", "expected recipe, compose or free")
     try:
-        scenarios, styles, patterns = [catalog(k, catalog_dir) for k in ["scenario", "style", "motion"]]
+        scenarios, styles, patterns = [catalog(k, catalog_dir, style_roots=style_roots) for k in ["scenario", "style", "motion"]]
     except (OSError, ValueError) as exc:
         r.error("catalog_unavailable", "$", str(exc))
         return r.result(scope="plan-contract-only")
@@ -60,6 +60,22 @@ def validate_plan(plan, plan_path, catalog_dir=None, strict_assets=False, strict
             r.error("custom_tokens", "$.design.tokens", "custom style needs nonempty tokens")
     elif not known(design.get("style_id"), styles):
         r.error("unknown_style", "$.design.style_id", "choose a catalog ID or custom with tokens")
+    if "style_lock" in design:
+        try:
+            from _stylepacks import style_lock
+            expected = style_lock(design.get('style_id'), style_roots)
+            if design['style_lock'] != expected:
+                r.error('style_lock', '$.design.style_lock', 'selected package, dependency or shared source changed; resolve the style and review the plan again')
+        except (ValueError, OSError, TypeError, KeyError) as exc:
+            r.error('style_lock', '$.design.style_lock', str(exc))
+    if "style_overrides" in design:
+        overrides = design["style_overrides"]
+        if not isinstance(overrides, dict) or not overrides:
+            r.error("style_overrides", "$.design.style_overrides", "expected a nonempty object")
+        elif set(overrides) - {"tokens", "motion_character", "camera", "sound"}:
+            r.error("style_overrides", "$.design.style_overrides", "only appearance, motion, camera and sound may be overridden")
+        elif any(not isinstance(v, dict) or not v for v in overrides.values()):
+            r.error("style_overrides", "$.design.style_overrides", "each section must be a nonempty object")
     if "preserve" in design:
         string_list(design["preserve"], r, "$.design.preserve")
     for field, kind in [("expression_ids", "expression"), ("recipe_id", "recipe")]:
@@ -80,6 +96,13 @@ def validate_plan(plan, plan_path, catalog_dir=None, strict_assets=False, strict
     runtime = object_field(plan, "runtime", r, "$")
     required_text(runtime, ["adapter"], r, "$.runtime")
     status = runtime.get("status", "unresolved")
+    selected_style = styles.get(design.get("style_id"), {}) if isinstance(design.get("style_id"), str) else {}
+    style_caps = set(selected_style.get("required_capabilities", []))
+    actual_caps = runtime.get("capabilities", [])
+    if isinstance(actual_caps, list) and all(isinstance(v, str) for v in actual_caps):
+        missing_style_caps = sorted(style_caps - set(actual_caps))
+        if missing_style_caps:
+            r.warning("style_capabilities", "$.runtime.capabilities", "selected style requires actual implementation of: " + ", ".join(missing_style_caps), status == "ready")
     if status not in ["unresolved", "ready"]:
         r.error("runtime_status", "$.runtime.status", "expected unresolved or ready")
     if status != "ready":
@@ -401,10 +424,11 @@ def main():
     parser.add_argument("--strict-timing", action="store_true")
     parser.add_argument("--strict-knowledge", action="store_true", help="treat knowledge-pack warnings as errors")
     parser.add_argument("--catalog-dir", help=argparse.SUPPRESS)
+    parser.add_argument("--style-root", action="append", default=None, help="additional style package collection")
     args = parser.parse_args()
     try:
         result = validate_plan(load_json(args.plan), args.plan, args.catalog_dir, args.strict_assets, args.strict_timing,
-                               args.strict_knowledge)
+                               args.strict_knowledge, args.style_root)
     except (OSError, ValueError, TypeError) as exc:
         result = dict(schema_version=1, valid=False, status="failed", errors=[dict(code="read_error", path=args.plan, message=str(exc))], warnings=[])
     print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))

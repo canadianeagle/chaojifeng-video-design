@@ -8,7 +8,7 @@ def main():
     root = Path(__file__).resolve().parents[1]
     payload = {}
     for kind in KINDS:
-        payload[kind] = list(catalog(kind, root / 'catalog').values())
+        payload[kind] = list(catalog(kind, root / 'catalog', style_roots=[]).values())
     template = root / 'assets/gallery/template.html'
     text = template.read_text(encoding='utf-8')
     if text.count('__CATALOG_JSON__') != 1:

@@ -5,14 +5,7 @@ from music_library import ROOT,load,validate_catalog,validate_sheet,digest
 
 class EditChecks(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):
-        cls.c=load(ROOT/'catalog/music.json')
-        cls.c=copy.deepcopy(cls.c)
-        cls.c.update(track_count=1,cue_count=1,items=[dict(
-            id='test-track',duration_seconds=30,sha256='1'*64,
-            emotion_ids=['curious'],scenario_ids=['product-demo'],narrative_roles=['establish'],
-            rights={'status':'unverified','evidence':[]},
-            cues=[dict(id='test-cue',track_id='test-track',source_in=0,source_out=20,duration_seconds=20)])])
+    def setUpClass(cls):cls.c=load(ROOT/'catalog/music.json')
     def sheet(self):
         t=self.c['items'][0];cue=t['cues'][0];s=cue['source_in']
         return dict(schema_version=1,library_id=self.c['library_id'],duration_seconds=30,cues=[dict(

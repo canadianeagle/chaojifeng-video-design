@@ -1,6 +1,6 @@
 # 从表达指导组合到实现
 
-原有 motion 目录提供12种属性变化；expression 目录提供64项跨层表达指导（含11项知识讲解层、14项发布片元素）；recipe目录提供17类组合起点。新层不替换底层稳定ID，不把来源视频或提示词当可执行插件。
+原有 motion 目录提供12种属性变化；expression 目录提供64项跨层表达指导（含11项知识讲解层、14项发布片元素）；recipe目录提供18类组合起点。新层不替换底层稳定ID，不把来源视频或提示词当可执行插件。
 
 ## 按问题查询
 
@@ -48,7 +48,7 @@ python3 SKILL_ROOT/scripts/catalog.py --kind recipe list --scenario brand-film
 
 ## 验证范围
 
-目录初始为 guidance，design=authored；preview/exported 依实际范围登记。小型索引示意不覆盖全部条目。64项不等于64个已渲染特效，17类配方也不保证任意组合。新增源不能自动提升历史验证状态，升级需保留反例与失效条件。标注轨道与检查范围见 [视觉强调](visual-emphasis.md)；采样几何无碰撞不等于所有帧、字形和语义已经通过。
+目录初始为 guidance，design=authored；preview/exported 依实际范围登记。小型索引示意不覆盖全部条目。64项不等于64个已渲染特效，18类配方也不保证任意组合。新增源不能自动提升历史验证状态，升级需保留反例与失效条件。标注轨道与检查范围见 [视觉强调](visual-emphasis.md)；采样几何无碰撞不等于所有帧、字形和语义已经通过。
 
 ## 知识讲解的组合入口
 
@@ -57,6 +57,8 @@ python3 SKILL_ROOT/scripts/catalog.py --kind recipe list --scenario brand-film
 选了 `knowledge.*` 表达就写 `plan.knowledge`，并运行 `validate_plan.py`；这些检查只核结构、引用和文字的机械问题，不证明事实为真、比喻贴切或观众看懂。
 
 概念知识科普用 `knowledge-music-explainer`，按 [科普编排](knowledge-music-direction.md) 选择字幕／旁白与direct／staged，从配方音乐池、当前默认或用户指定曲目反推声画编排，沿现有知识包和声音合同组织，不把试片确认设为通用门禁。
+
+用Rap／嘻哈／说唱讲知识时自动选 `knowledge-rap-explainer`，按 [说唱科普](knowledge-rap-direction.md) 逐句关联事实、实际唱词、素材、重音和动作落定；背景音乐科普不切Rap。需要角色、三维、灯光与跨工具合成时按 [场景与工具组合](scene-tool-composition.md) 选择单一或多种路线，最终看真实MP4并检查声音，目录示意不代表工具已接入。
 
 ## 产品表达的组合入口
 

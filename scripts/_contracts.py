@@ -52,9 +52,13 @@ def nonempty(value):
     return isinstance(value, str) and bool(value.strip())
 
 
-def catalog(kind, root=None, _check_refs=True):
+def catalog(kind, root=None, _check_refs=True, style_roots=None):
     path = Path(root or CATALOG_DIR) / (KINDS[kind] + ".json")
-    data = load_json(path)
+    if kind == "style" and (root is None or Path(root).resolve() == CATALOG_DIR.resolve()) and (CATALOG_DIR.parent / "styles").is_dir():
+        from _stylepacks import load_registry
+        data = dict(schema_version=1, items=list(load_registry(extra=style_roots)[0].values()))
+    else:
+        data = load_json(path)
     if (not isinstance(data, dict) or type(data.get("schema_version")) is not int
             or data.get("schema_version") != 1 or not isinstance(data.get("items"), list)):
         raise ValueError(f"invalid catalog envelope: {path}")
@@ -222,7 +226,7 @@ def catalog(kind, root=None, _check_refs=True):
                 if not item.get(field):
                     continue
                 if target_kind not in cache:
-                    cache[target_kind] = catalog(target_kind, root, _check_refs=False)
+                    cache[target_kind] = catalog(target_kind, root, _check_refs=False, style_roots=style_roots)
                 for ident in item[field]:
                     require(ident in cache[target_kind], item["id"] + "." + field,
                             "unresolved " + target_kind + " ID: " + ident)

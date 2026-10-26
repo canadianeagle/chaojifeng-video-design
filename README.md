@@ -12,7 +12,24 @@
 - **按范围修改已有作品。** 定位镜头、对象或时间段，检查变动影响的声音、字幕与接缝。
 - **检查交付是否完整。** 校验计划、素材引用、时间、文件哈希与实际媒体信息，分别记录已完成和未验证的项目。
 
-内含 8 类场景、7 种风格、12 项底层动效、64 项表达指导和 17 类组合配方。目录中的条目提供设计与实现指导，具体效果由实际工程完成。
+内含 8 类场景、66 个独立风格包、12 项底层动效、64 项表达指导和 18 类组合配方。目录中的条目提供设计与实现指导，具体效果由实际工程完成。
+
+## 独立风格包与扩展
+
+保留原有 7 种风格，纳入 Lemo-Opuscar 的 59 种风格，包括水墨、水彩、版画、动态排版、字幕新闻、数据叙事、像素、玻璃产品等 11 个来源分类。每包分别提供风格规则、案例说明、原生动作索引与可复用文本源码；故事、台词和时间线由当前作品决定。
+
+[浏览全部风格](styles/README.md) · [本地表达图册](assets/gallery/index.html) · [风格包合同](references/style-pack-contract.md)
+
+```sh
+python3 scripts/stylepacks.py resolve 中国水墨
+python3 scripts/catalog.py --kind style list --scenario knowledge-explainer
+python3 scripts/stylepacks.py init brand-ink --into /project/video/styles --extends opuscar-ink-wash
+python3 scripts/stylepacks.py validate --style-root /project/video/styles
+```
+
+风格可用规范 ID、中文或英文名查询。项目自定义包使用独立集合，可继承一个基底并声明局部借用；加载检测重复 ID、别名冲突、缺失引用与循环依赖，不需要修改 Skill 入口。单片覆盖留在计划里，长期变体再独立成包。
+
+内置目录和图册由元数据生成，生成时排除项目与私人集合。上游原文及源码锁定固定提交并保留许可证、素材来源和文件哈希；源码收录与本机实际运行、成片导出分别记账。素材与运行依赖按作品需要准备，查询不会执行上游代码或安装环境。扩展与检查见 [维护规范](MAINTAINING.md)。
 
 ## 同一套方法，按场景走不同链路
 
@@ -135,7 +152,11 @@ python3 scripts/build_music_atlas.py
 
 | 位置 | 内容 |
 | --- | --- |
-| `SKILL.md` | Agent 入口与执行方法 |
+| `SKILL.md` | 轻量入口与任务路由 |
+| `DIRECTOR.md` / `TECHNIQUE.md` | 导演方法与制作能力适配 |
+| `MAINTAINING.md` | 扩展、导入、生成与回归 |
+| `styles/` | 独立风格包、完整风格规则与案例源码 |
+| `vendor/lemo-opuscar/` | 锁定的共享文本源码、许可证与哈希清单 |
 | `references/` | 导演、知识表达、镜头、声音与验收方法 |
 | `catalog/` | 场景、风格、动效、表达与配方目录 |
 | `templates/` | 计划、交付记录、声音事件表与其他模板 |
@@ -147,5 +168,7 @@ python3 scripts/build_music_atlas.py
 检查通过只说明对应结构或测量条件成立。画面、听感、事实与观众理解需要分别验收，未做的检查保留未验证状态。
 
 ## 许可与来源
+
+纳入的 Lemo-Opuscar 文档与源码采用其原 MIT 许可并保留版权声明，详见 [第三方声明](THIRD_PARTY_NOTICES.md)。其案例素材与其他依赖按各自许可使用。
 
 本仓库原创代码、文档、模板和图册采用 [MIT License](LICENSE)。案例视频的使用范围见 [案例说明](examples/showcase/README.md#使用范围)。方法参考及其边界见 [来源说明](references/sources.md)。外部链接指向的代码、商标、字体、音乐与视频按各自许可使用。

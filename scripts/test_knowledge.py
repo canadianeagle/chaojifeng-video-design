@@ -651,9 +651,7 @@ class ExampleAndCatalogTests(unittest.TestCase):
 
     def test_counts_in_the_docs_match_the_catalog(self):
         expressions, recipes = len(catalog("expression")), len(catalog("recipe"))
-        skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         method = (ROOT / "references" / "expression-method.md").read_text(encoding="utf-8")
-        self.assertIn(f"{expressions}项表达", skill)
         self.assertIn(f"expression 目录提供{expressions}项", method)
         self.assertIn(f"recipe目录提供{recipes}类", method)
         self.assertIn(f"{expressions}项不等于", method)

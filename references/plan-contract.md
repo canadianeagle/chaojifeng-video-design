@@ -109,3 +109,7 @@ recipe可选`music_policy`：`candidate_track_ids`为非空无重复曲目ID数�
 现有scenes.start/end、beats.time、motions.start/end、audio_cues.time仍为整片秒；内嵌媒体源时间单独记录入出点、整片起止、速率和重放。音效的实际起音相对文件起点有偏移，按原audio_cues/beat与实际素材校准。参考混音不能自动登记成独立SFX；实际裁剪/混音文件仍需assets来源/使用范围/哈希。
 
 两份新结构示例保留runtime=unresolved及missing音频，只有结构可查，不能直接导出或通过strict-assets。实际项目替换素材、实现、审看后再生成自己的delivery，不继承示例状态。
+
+## 风格包扩展（旧计划继续适用）
+
+内置风格和显式外置集合统一解析。可选 design.style_overrides 与 design.style_lock 的字段、继承、能力与哈希检查见 [风格包合同](style-pack-contract.md)。来源风格需要的 time-control、graphics-2d、graphics-3d 或 media-composite 是实际实现能力，不能仅凭包存在登记 ready。

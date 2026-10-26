@@ -207,7 +207,8 @@
         "data-comparison",
         "object-explainer",
         "layered-concept-reveal",
-        "knowledge-music-explainer"
+        "knowledge-music-explainer",
+        "knowledge-rap-explainer"
       ],
       "expression_ids": [
         "narrative.follow-unit",
@@ -318,7 +319,8 @@
       "recipe_ids": [
         "data-comparison",
         "evidence-board-brief",
-        "layered-concept-reveal"
+        "layered-concept-reveal",
+        "knowledge-rap-explainer"
       ],
       "expression_ids": [
         "visual.quantity-progress",
@@ -788,7 +790,8 @@
         "music-event-performance",
         "semantic-type",
         "sensory-before-after",
-        "product-music-story"
+        "product-music-story",
+        "knowledge-rap-explainer"
       ],
       "expression_ids": [
         "sound.beat-map",

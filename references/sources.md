@@ -66,7 +66,7 @@ visual.target-callout为新增指导，camera.focus-frame/text.semantic-emphasis
 
 ## 讲解导演、本人声音与降噪
 
-讲解导演借鉴本机 ai-avatar-narration 的真实旁白先行、资料/人物/嘴眼/字幕分层与音频绑定方法，见 [讲解导演与声音参考](explainer-narration.md)。不继承固定形象、课堂或WAN流程，不要求安装该Skill。公开版不分发声音参考；使用者在项目内自行记录授权、哈希和听审状态。
+讲解导演借鉴本机 ai-avatar-narration 的真实旁白先行、资料/人物/嘴眼/字幕分层与音频绑定方法，见 [讲解导演与声音参考](explainer-narration.md)。不继承固定形象、课堂或WAN流程，不要求安装该Skill。本人声音的授权、哈希和听审状态见 使用者本机的 `assets/voice/manifest.json` 声音清单；授权不扩展为公开分发。
 
 [ACE-Step官方教程](https://github.com/ace-step/ACE-Step-1.5/blob/main/.claude/skills/acestep-docs/getting-started/Tutorial.md) 提供参考音色条件及spoken word标签；[社区TTS-like路线](https://github.com/starsFriday/ComfyUI-ACEStep#tts-like-reference-voice) 与 [节点源码](https://github.com/starsFriday/ComfyUI-ACEStep/blob/main/nodes.py) 提供稿件转歌词、参考音色潜变量条件的研究线索，作者说明措辞、读音和旋律可偏移。社区仓库DeepWiki未索引后回退源码，不复制其节点或XL模型。普通Turbo本机试验与社区XL分开记录，机制不等于讲解质量。
 
@@ -111,3 +111,28 @@ visual.target-callout为新增指导，camera.focus-frame/text.semantic-emphasis
 - [TikTok 2025小企业创意手册](https://ads.tiktok.com/business/library/TikTok_SMB_Creative_Playbook_2025.pdf)：前3～6秒与创意组织的背景材料；2026-10-20读取。只作为该平台广告语境的参考，不证明其他渠道、片长、色彩或开场问句有效。
 
 相关性来自产品宣传与开场任务，时效性按上述版本和底层研究时间判断，权威性来自原始创作材料与官方指南的职责范围。访问人数、访问次数、点赞与评论数未知，不填0；未取得正文的其他检索结果不用于支撑方法。适配判断、声画分工和失败回退为本Skill原创归纳，仍需本次项目实际验证。
+
+## 说唱科普与成品反馈
+
+用户于2026-10-25确认，将指定Cursor制作与Codex返修过程归纳为 [嘻哈知识科普](knowledge-rap-direction.md)，并强化通用素材检索、首帧／前三秒、逐句声画编排、音轨变更后的重验与候选交付判断。研究读取用户原始任务、实质纠正、原工程自查与当前状态；模型思考和结果自述不作为用户确认。两段会话属于同一作品链，不能当作两个独立成功案例。
+
+原任务要求全面采集事实素材、准确而有力度的歌词、沉浸声画和强开场；返修反馈包括前奏过长、词与字幕不符、旋律平、局部修字声线和接缝突兀。上述反馈支持建立失败检查，不证明某种引擎、整首生成或某参数必然改善效果。短试听认可不覆盖全片，自动测量不覆盖听感，新候选导出不等于被接受。
+
+方法为本Skill原创适配，经确认实施；新配方保持guidance，预览／导出与观众效果分别登记，不继承旧工程的测量或接受状态。本Skill不分发原始私有对话、完整歌词、人物声音、曲目与项目素材；详细证据与执行记录只保存在用户项目。访问与互动指标未知，不填0。
+
+初轮提案未取得三维与合成工具文档；用户随后补充指定仓库，已完成结构与针对性问答，并回读相关一手源码，详见 [场景与工具组合及来源](scene-tool-composition.md#一手来源与范围)。场景分工、镜头先行、Poly Haven资产许可、MCP边界、官方Remotion指导和真实MP4验收据此补充；未安装、运行或验证具体三维成片，不能把引擎名称和文档研究当作已验证实现。
+
+
+## 资产优先与制作工具工件
+
+2026-10-25，用户确认将资产优先、Poly Haven视觉提升、日语旁白与场景组合工程化。新增 [制作工具合同](production-tool-contract.md)、职责清单、只读探测／元信息检索与项目声明校验器。流程与缓存时长是本Skill设计，不是服务端配额、行业标准或画质承诺；代码测试只支持其对应的结构与失败边界。
+
+Blender MCP的Poly Haven接入通过指定仓库结构、问答及`addon.py`交叉核对，资产检索与HDRI／纹理／模型导入属于文档支持的能力；本机默认端口未接通，没有完成MCP导入或渲染。AivisSpeech及Engine的官方README、角色路由和WAV连接源码支持日语TTS与音频拼接，未支持本轮所需的歌唱承诺；程序与声音模型条件分开核。Mixamo／Unreal暂为候选，不宣称完成其架构、现行许可或本机接入核验。具体一手入口与范围见 [场景与工具组合](scene-tool-composition.md#一手来源与范围)。
+
+用户截图中Poly Haven HDRI改善水面和环境的主张用于提出同镜头比较，未取得原始工程，不能独立核实效果或约500KB的压缩结论。质量检查同时覆盖照明、反射、阴影、连续运动与成本；不能以资产已找到替代合理使用。研究记录和直接API元信息检索留在用户输出目录，不分发私有会话与截图；访问及互动指标未知。
+
+## Lemo-Opuscar 工程规范与风格包
+
+2026-10-26，经用户确认，纳入 [lemomo-ai/lemo-opuscar 固定版本](https://github.com/lemomo-ai/lemo-opuscar/tree/413a6bd6d78ebd3bdd5abaec9538a26867f890df) 的全部 59 个风格说明、案例说明与可用文本源码，并保留 MIT 许可证与素材来源清单。借鉴 STYLE／DEMO 分离、导演／技术分层、单一元数据生成索引、统一时间与可复现检查。
+
+DeepWiki 用于架构起点，Context7 未收录该库，工程结论由固定提交源码核对。完整导入记录和哈希见 [第三方声明](../THIRD_PARTY_NOTICES.md)。保留本库真实素材、中文、指定曲目、direct 交付、模型与引擎中立等已确认规则；上游固定次数、模型、BPM 与案例故事不成为本库全局默认。源码收录、包结构校验、最小制作验证、整片观看与听审分别记账。
