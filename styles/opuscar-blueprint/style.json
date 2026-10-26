@@ -179,7 +179,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "28a1e4f35e042d9d5cdbbd8740a57bd5267430320e34fa3eaa72753a7ce93ddf",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/blueprint_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/blueprint.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#blueprint"
+    "video": "sample.mp4",
+    "video_sha256": "9afd54ec308e8f8f7bb20c5652d0a95c3874d7dc92b64392c9dcb49d28256fa8",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

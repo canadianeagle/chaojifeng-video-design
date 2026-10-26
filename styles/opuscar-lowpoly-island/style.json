@@ -179,7 +179,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "7feaf6cf1ba68b90b78106eeb4386a9881eacd0d6b31b33ed48a32dd13ec7854",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/lowpoly-island_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/lowpoly-island.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#lowpoly-island"
+    "video": "sample.mp4",
+    "video_sha256": "d5f2da94f3d8718801ed1381fe1dd593e2fbc51e53995ada27d5c2bf580b9c5b",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

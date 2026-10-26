@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "896f28e20bdd6c466544a6b137495adf9de04eb4c08bc25b5405cf9905656bc8",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/woodcut_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/woodcut.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#woodcut"
+    "video": "sample.mp4",
+    "video_sha256": "a2b8682fa842dc317a2e98a16f44c5778963584cfa13bd311bc0641e55d06077",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

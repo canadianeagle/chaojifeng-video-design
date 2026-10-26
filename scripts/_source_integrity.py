@@ -39,4 +39,23 @@ def verify_sources(root=ROOT):
         for frame in frame_manifest['frames']:
             verify(root,frame['path'],frame['sha256'])
             frame_count+=1
-    return dict(status='passed',files=checked,styles=len(manifest['styles']),reference_frames=frame_count,revision=manifest['revision'],scope='source-integrity-only')
+    sample_manifest=root/'assets/gallery/samples.json'
+    sample_count=0
+    if sample_manifest.is_file():
+        films=read_json(sample_manifest)
+        if films.get('style_revision')!=manifest['revision']:
+            raise ValueError('gallery sample style revision mismatch')
+        ids={s['id'] for s in manifest['styles']}
+        if {s['style_id'] for s in films['samples']}!=ids or len(films['samples'])!=len(ids):
+            raise ValueError('gallery samples must match all imported styles once')
+        for sample in films['samples']:
+            if sample['path']!=f"styles/{sample['style_id']}/sample.mp4":
+                raise ValueError('gallery sample path does not match its style')
+            verify(root,sample['path'],sample['sha256'])
+            if (root/sample['path']).stat().st_size!=sample['bytes']:
+                raise ValueError('gallery sample size mismatch: '+sample['style_id'])
+            item=read_json(root/'styles'/sample['style_id']/'style.json')
+            if item.get('gallery',{}).get('video')!='sample.mp4' or item['gallery'].get('video_sha256')!=sample['sha256']:
+                raise ValueError('gallery sample binding mismatch: '+sample['style_id'])
+            sample_count+=1
+    return dict(status='passed',files=checked,styles=len(manifest['styles']),reference_frames=frame_count,samples=sample_count,revision=manifest['revision'],scope='source-integrity-only')

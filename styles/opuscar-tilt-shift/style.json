@@ -179,7 +179,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "3941384751b0c93f72708afd33b272a097de72db09ac4e23b4fbe640e07a5714",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/tilt-shift_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/tilt-shift.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#tilt-shift"
+    "video": "sample.mp4",
+    "video_sha256": "2396f4881e386bfcad7a9e3f79dbab0614255c25ba51bd5c24ea29ab8e743e01",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

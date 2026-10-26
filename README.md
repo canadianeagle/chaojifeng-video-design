@@ -121,7 +121,7 @@ python3 scripts/validate_plan.py examples/product-demo.plan.json
 python3 -m unittest discover -s scripts -p 'test_*.py'
 ```
 
-打开 [风格画廊](assets/gallery/index.html)，用代表画面浏览全部 66 种风格，可搜索、按分类或视频任务筛选、并排对比，并复制当前风格的创作指令。59 张来源代表帧已嵌入单个 HTML；原有 7 个基础风格按实际参数呈现。需要动作与配方时进入 [表达目录](assets/gallery/expressions.html)。也可以直接阅读 [Skill 入口](SKILL.md)、[计划合同](references/plan-contract.md) 和 [执行与交付](references/runtime-and-delivery.md)。图册与计划示例用于理解和检查结构，实际作品仍需渲染、观看与试听。
+打开 [风格画廊](assets/gallery/index.html)，用代表画面浏览全部 66 种风格，可搜索、按分类或视频任务筛选、并排对比，并复制当前风格的创作指令。59 张代表帧已嵌入 HTML，59 条样片随仓库一起分发，下载完整仓库后可直接离线播放；基础风格按实际参数呈现。需要动作与配方时进入 [表达目录](assets/gallery/expressions.html)。也可以直接阅读 [Skill 入口](SKILL.md)、[计划合同](references/plan-contract.md) 和 [执行与交付](references/runtime-and-delivery.md)。图册与计划示例用于理解和检查结构，实际作品仍需渲染、观看与试听。
 
 ## 音乐和声音
 

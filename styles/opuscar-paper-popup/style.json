@@ -180,7 +180,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "373ff711470a10d9101cb19c30fd2639197fa7fe8a599a30ba0dd6958ee7bc38",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/paper-popup_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/paper-popup.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#paper-popup"
+    "video": "sample.mp4",
+    "video_sha256": "15cb823cbf2ee1a877de52a477a0d2f4edde062d31ae30ca5c48e9ffa1caed0e",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

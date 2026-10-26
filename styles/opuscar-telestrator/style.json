@@ -187,7 +187,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "43b6da443f0ac77b2a7717a25bb05083063790a8ad824c4106c3b15f5982e60e",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/telestrator_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/telestrator.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#telestrator"
+    "video": "sample.mp4",
+    "video_sha256": "7bd11603e354a90e9edaa0b06febe1f808c4fb6b6d67f699e04b5359a2627987",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

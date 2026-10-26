@@ -110,7 +110,19 @@ def load_registry(extra=None, bundled=None):
                         if parsed.scheme!='https' or not parsed.hostname or parsed.username or parsed.password:
                             raise ValueError(f'{ident}.gallery.video: expected HTTPS without userinfo')
                     else:
-                        inside(path.parent,video)
+                        local_video=inside(path.parent,video)
+                        if local_video.suffix.lower() not in {'.mp4','.webm','.mov'}:
+                            raise ValueError(f'{ident}.gallery.video: unsupported video format')
+                for key in ['poster_sha256','video_sha256']:
+                    if key in gallery and (not isinstance(gallery[key],str) or not re.fullmatch(r'[0-9a-f]{64}',gallery[key])):
+                        raise ValueError(f'{ident}.gallery.{key}: expected SHA-256 hex digest')
+                if 'attribution' in gallery:
+                    credit=gallery['attribution']
+                    if not isinstance(credit,dict) or not isinstance(credit.get('name'),str) or not credit['name'].strip() or not isinstance(credit.get('url'),str):
+                        raise ValueError(f'{ident}.gallery.attribution: expected name and HTTPS url')
+                    parsed=urlparse(credit['url'])
+                    if parsed.scheme!='https' or not parsed.hostname or parsed.username or parsed.password:
+                        raise ValueError(f'{ident}.gallery.attribution.url: expected HTTPS without userinfo')
                 if gallery.get('source_url'):
                     parsed=urlparse(gallery['source_url'])
                     if parsed.scheme!='https' or not parsed.hostname or parsed.username or parsed.password:

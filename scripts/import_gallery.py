@@ -35,7 +35,18 @@ def import_frames(source):
     for path,item,image,target,rel in records:
         shutil.copyfile(image,target)
         sha=hashlib.sha256(target.read_bytes()).hexdigest()
-        item['gallery']={'poster':'preview.jpg','poster_sha256':sha,'poster_source':f'{URL}/blob/{REVISION}/{rel}','video':f"https://lemomo-ai.github.io/lemo-opuscar/films/{item['origin']['slug']}.mp4",'source_url':f"https://lemomo-ai.github.io/lemo-opuscar/#{item['origin']['slug']}"}
+        # A poster refresh must retain the integrated film, never restore a hotlink.
+        media=item.get('gallery',{})
+        media.update(poster='preview.jpg',poster_sha256=sha,poster_source=f'{URL}/blob/{REVISION}/{rel}')
+        media.pop('source_url',None)
+        if (path.parent/'sample.mp4').is_file():
+            media['video']='sample.mp4'
+            if not media.get('video_sha256'):
+                media['video_sha256']=hashlib.sha256((path.parent/'sample.mp4').read_bytes()).hexdigest()
+        else:
+            media.pop('video',None)
+            media.pop('video_sha256',None)
+        item['gallery']=media
         path.write_text(json.dumps(item,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         manifest.append(dict(style_id=item['id'],path=str(target.relative_to(ROOT)),sha256=sha,upstream_path=rel,revision=REVISION))
     out=ROOT/'assets/gallery/reference-frames.json'

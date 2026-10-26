@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "b32a4ec7026b88b0c71b639bd87bc4b304d6286dfa46f7b73696625ad84d8a22",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/impasto_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/impasto.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#impasto"
+    "video": "sample.mp4",
+    "video_sha256": "a03f8fcd7dd293233d3f71feb4832c3867b07a443dd030bca818352d21e654e2",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

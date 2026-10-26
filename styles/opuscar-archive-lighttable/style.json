@@ -176,7 +176,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "594f6d15fce4848e086d2adc1218b0e32d5b118cae4a49ef23857fe378d5800b",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/archive-lighttable_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/archive-lighttable.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#archive-lighttable"
+    "video": "sample.mp4",
+    "video_sha256": "1551f544b61610c7d7be218cedca25def8ebcb0c4c532cdc78544321e65a22d1",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

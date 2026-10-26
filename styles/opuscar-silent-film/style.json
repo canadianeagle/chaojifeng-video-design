@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "4911e71060640f3721ca7cafd1079a5fbe3d774071fba9ddae67d27df136dda2",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/silent-film_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/silent-film.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#silent-film"
+    "video": "sample.mp4",
+    "video_sha256": "57198d76bf4224c208b61b9e1609f4bea9474e932a00b7b8db82462b124d6323",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

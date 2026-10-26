@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "72f7edc86977015ded7ecb11a305c85cf4fcafec1dff5d5a0fd78d2a5264fe7c",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/shadow-puppet_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/shadow-puppet.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#shadow-puppet"
+    "video": "sample.mp4",
+    "video_sha256": "b5c63168b11ed4468769326d057f3d8e9639cfeeb877f4b06d99b525ca7e7acd",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

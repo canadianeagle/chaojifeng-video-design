@@ -179,7 +179,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "2cf0a4f42dae3b8361a8758c7ee334aab41cacdb6dfb231dd41937dda97931ee",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/briefing-board_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/briefing-board.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#briefing-board"
+    "video": "sample.mp4",
+    "video_sha256": "1a0dafce471a6dea58645e7a21bb053325337abf97916fc43eb944576008b3f7",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

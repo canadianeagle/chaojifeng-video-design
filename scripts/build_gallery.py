@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate a portable visual style gallery and the retained expression directory.
 
-Posters embed into the HTML. Videos load from their declared source only when
+Posters embed into the HTML. Videos load from their bundled path only when
 the viewer clicks play. Generation never fetches media or changes evidence.
 """
 import argparse
@@ -35,10 +35,13 @@ def gallery_data(root=ROOT):
     # The portable bundle never discovers or exports a private project collection.
     registry,_,locations=load_registry(extra=[],bundled=root/'styles')
     scenario_items=list(catalog('scenario',root/'catalog',style_roots=[]).values())
+    sample_manifest=root/'assets/gallery/samples.json'
+    samples={s['style_id']:s for s in json.loads(sample_manifest.read_text())['samples']} if sample_manifest.is_file() else {}
     items=[]
     for ident,item in registry.items():
-        folder=locations[ident];media=item.get('gallery',{});origin=item.get('origin',{})
+        folder=locations[ident];media=item.get('gallery',{})
         sample=json.loads((folder/'style.upstream.json').read_text()) if (folder/'style.upstream.json').is_file() else {}
+        media_info=samples.get(ident,{})
         poster=image_url(inside(folder,media['poster']),media.get('poster_sha256')) if media.get('poster') else ''
         video=media.get('video','')
         if video and not urlparse(video).scheme:
@@ -47,15 +50,15 @@ def gallery_data(root=ROOT):
         category='基础风格' if item.get('category')=='超级峰原有风格' else item.get('category','其他风格')
         row=dict(id=ident,name=item['name'],english_name=item.get('english_name',''),category=category,
             intent=item['intent'],tokens=item['tokens'],scenario_ids=item.get('scenario_ids',[]),
-            native_moves=item.get('native_moves',[]),poster=poster,video=video,source=bool(origin),
-            source_url=media.get('source_url','https://lemomo-ai.github.io/lemo-opuscar/'),
-            film=sample.get('film',''),story=sample.get('line_cn',''),duration=sample.get('dur'),
+            native_moves=item.get('native_moves',[]),poster=poster,video=video,
+            attribution=media.get('attribution'),
+            film=sample.get('film',''),story=sample.get('line_cn',''),duration=media_info.get('duration',sample.get('dur')),
+            has_audio=media_info.get('has_audio'),
             guide=f'../../styles/{ident}/'+item.get('guide','STYLE.md'),
-            credits=f'../../styles/{ident}/demo/CREDITS' if (folder/'demo/CREDITS').is_file() else '',
             verification=item['verification'])
         row['search']=json.dumps([ident,item['name'],item.get('english_name',''),category,item.get('aliases',[]),item['intent'],sample.get('uses',[]),row['native_moves'],[s['name'] for s in scenario_items if s['id'] in row['scenario_ids']]],ensure_ascii=False).casefold()
         items.append(row)
-    items.sort(key=lambda x:(FIRST.index(x['id']) if x['id'] in FIRST else len(FIRST),x['source'] is False,x['category'],x['id']))
+    items.sort(key=lambda x:(FIRST.index(x['id']) if x['id'] in FIRST else len(FIRST),not bool(x['poster']),x['category'],x['id']))
     by_id={x['id']:x for x in items}
     return dict(styles=items,scenarios=[dict(id=x['id'],name=x['name']) for x in scenario_items],
         categories=sorted({x['category'] for x in items},key=lambda x:(x!='基础风格',x)),
@@ -84,6 +87,7 @@ def build(root=ROOT,check=False):
             if not path.is_file() or path.read_text(encoding='utf-8')!=content:raise ValueError(f'stale generated page: {path}; run build_gallery.py')
         else:path.write_text(content,encoding='utf-8')
     return dict(styles=len(data['styles']),posters=sum(bool(x['poster']) for x in data['styles']),
+                bundled_videos=sum(bool(x['video']) and not urlparse(x['video']).scheme for x in data['styles']),
                 pages=[str(p) for p in outputs],portable_posters=True,video_preload=False,
                 checked_only=check,catalog_verification_mutated=False)
 

@@ -179,7 +179,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "da2bd273d62fe7ecf5df216b6e96f21b6a0778ad77c41272252c0c6d81b01de1",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/one-line_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/one-line.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#one-line"
+    "video": "sample.mp4",
+    "video_sha256": "2a084ae16953363dd8e7927495f0c17ca34f3f28ca1d8902523ac2ecf9db1d3c",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

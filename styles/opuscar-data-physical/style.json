@@ -175,7 +175,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "778ce5e060fe2a2cdf689913155012a527e929e569eb46237691ae4b8a234714",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/data-physical_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/data-physical.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#data-physical"
+    "video": "sample.mp4",
+    "video_sha256": "105cfdd6cbc140dffc71aae36c8f40c7fde324dfcdef362339e5b0a0d9e1dabd",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

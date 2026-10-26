@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "656b16a674c5c142d9a540c5a92cda8469c6e9e758f737494db2152c989e604a",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/pixel-rpg_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/pixel-rpg.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#pixel-rpg"
+    "video": "sample.mp4",
+    "video_sha256": "52387a0b25d7ee2cdd1a760988498c027d10fb7d0f084e6633cb9f49d8047ffb",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

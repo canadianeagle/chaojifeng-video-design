@@ -177,7 +177,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "4133b3587ce009c44cd8d1c10e094c771fe3c47da6e4fd74dda9a21d061332d6",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/backrooms_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/backrooms.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#backrooms"
+    "video": "sample.mp4",
+    "video_sha256": "3674549d1c13400b57517d04a02772f70d2136b26bc17194987b85c3865d4e65",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

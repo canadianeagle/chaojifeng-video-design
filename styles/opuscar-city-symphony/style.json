@@ -169,7 +169,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "ed5ad70aa40f1cb6584c4e4ea4db3d85e4b69f3a35d63c6999f9ad66a9135fbe",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/city-symphony_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/city-symphony.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#city-symphony"
+    "video": "sample.mp4",
+    "video_sha256": "d1232cc2d36a51c5a61594dbd1dfaea2cc11dbdf8914687a4e8cc358e02d67ff",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

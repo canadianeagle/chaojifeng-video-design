@@ -179,7 +179,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "306dda677b859ace3cc1a12f372dd84fd5b8b91395852affa7d4b632080b9672",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/art-deco_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/art-deco.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#art-deco"
+    "video": "sample.mp4",
+    "video_sha256": "7b55fe51616048dcda50e920ab1e4141c00e009f141015a24c09f25837ca8bc1",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

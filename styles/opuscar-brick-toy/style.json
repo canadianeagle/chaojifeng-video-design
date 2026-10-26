@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "79d70fe522b57789211616288f64acff3e3aaa140c13dfd13d7ddc8454e9b250",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/brick-toy_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/brick-toy.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#brick-toy"
+    "video": "sample.mp4",
+    "video_sha256": "1d74377276a890a3094601f939786b29a70bbde495ee40a75b43ddadd6337936",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

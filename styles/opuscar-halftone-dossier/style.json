@@ -177,7 +177,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "8a145a2edb7d1b4cfbe289bdf0a606430219f53c2f25c55ba619725158f9a815",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/halftone-dossier_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/halftone-dossier.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#halftone-dossier"
+    "video": "sample.mp4",
+    "video_sha256": "ec0dac24d2f2c70df974b8d75ac81d4301afe9bef6b105edc2f49724c622a520",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

@@ -11,6 +11,8 @@ styles/<id>/
   STYLE.upstream.md     上游完整原文，仅来源包有
   DEMO.md               一个案例的故事、镜头、声音和实现说明
   demo/                 已纳入的文本源码与素材来源清单
+  preview.jpg           画廊代表帧，可选
+  sample.mp4            随包分发的样片，可选
   LICENSE               来源包许可证
 ```
 
@@ -28,7 +30,7 @@ styles/<id>/
 
 `implementation` 可登记 `status`、包内相对路径数组 `entrypoints`、共享技术来源和缺失素材。`reference_files` 声明包内参考文件。导入的 `reference-source` 只表示源码已收录；它不证明依赖齐备、可运行、上镜或整片导出。包内文件路径必须存在且不逃出包目录；这些字段从不作为 shell 命令执行。
 
-可选 `gallery` 提供画廊素材：`poster` 是包内 JPEG／PNG／WebP／GIF 相对路径，`poster_sha256` 为可选完整性哈希；`video` 为包内视频或不含用户凭证的 HTTPS 地址，`source_url` 为 HTTPS 来源页。查目录只检查路径和类型；图像内容与哈希在画廊生成或来源完整性检查时核对。HTML 内嵌图像，视频点击后才加载。gallery 字段与包内图像不从 extends 自动继承，也不改变 preview／exported 的验证状态。
+可选 `gallery` 提供画廊素材：`poster` 是包内 JPEG／PNG／WebP／GIF 相对路径；`video` 为包内 MP4／WebM／MOV 或不含用户凭证的 HTTPS 地址。可选 `poster_sha256`、`video_sha256` 必须是 64 位小写十六进制 SHA-256。旧 `source_url` 字段继续兼容，画廊不将其作为外部播放入口。查目录只检查路径和类型；图像内容与哈希在生成或完整性检查时核对，分发样片由 assets/gallery/samples.json 绑定并校验。HTML 内嵌图像，内置视频通过相对路径点击后加载；离线播放需保留完整目录。可选 `attribution` 包含非空 `name` 和 HTTPS `url`，用于详情内一行简短署名；未登记的风格不显示此行。gallery 字段与素材不从 extends 自动继承，也不改变 preview／exported 的验证状态。
 
 ## 派生与借用
 

@@ -6,6 +6,6 @@
 
 来源原文、案例与源码保持可追溯；本库的中文适配、元数据接口、继承与校验由本项目维护。原作者的品牌、经历、模型能力声明和成片验收不归为本项目成果。
 
-风格画廊另纳入同一提交的 59 张代表帧，原路径为 styleboard/img/<slug>_0.jpg，来源与逐图哈希保存在 [reference-frames.json](assets/gallery/reference-frames.json)。图像用于浏览源风格与关联案例，许可及各案例素材出处继续保留在每包 LICENSE 和 demo/CREDITS。
+画廊的 59 张代表帧与 59 条样片来自 LemoLab 的 Lemo-Opuscar，影片与静帧按 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 发布。代表帧清单为 [reference-frames.json](assets/gallery/reference-frames.json)，样片清单为 [samples.json](assets/gallery/samples.json)。后者记录 web Release 资产、原文件与分发文件的哈希和变更；各案例第三方素材署名保留在对应 demo/CREDITS。
 
-其他声音、字体、影片、模型和数据未随画廊下载。使用项目按实际取用内容分别核对来源和许可，MIT 代码许可不替代素材许可。上游代码中的外部接口、模型与下载地址也需要在实际使用时核对。
+56 条样片原样纳入；game-show、paper-lantern、news-package 移除了音轨，视频内容保持不变，其被排除的配音未随本库分发。原始音源、字体、模型与数据集未单独收录。

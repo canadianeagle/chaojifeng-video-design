@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "987d734ac7608270e2b039e283bfb47414cdfadfe049f80bc2e9a7273b45cf56",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/microgame_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/microgame.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#microgame"
+    "video": "sample.mp4",
+    "video_sha256": "b1a9753810097d8a691a75b070388d7139a842a0637f89007d337a57ff5a549a",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

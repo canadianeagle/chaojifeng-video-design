@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "aa6ddde5a18be001340cf20d1e2550fdce5b7e4c9f4392dcad5f03b276be1059",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/white-model_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/white-model.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#white-model"
+    "video": "sample.mp4",
+    "video_sha256": "6c8453ed8be6bc16380af3f5599cf91b79d8f0ce7e5d3dffb4b8c9ec74eb93a0",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

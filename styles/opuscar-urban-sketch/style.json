@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "75e5675cc05e5825e50aaf8ce55c11a554bdec5d8b51cb02882f596434bba5fe",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/urban-sketch_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/urban-sketch.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#urban-sketch"
+    "video": "sample.mp4",
+    "video_sha256": "41c452cb880d7e69efbff99fa6d15da31ed00033e6a76a611e7fd14d015ada42",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

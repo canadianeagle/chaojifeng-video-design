@@ -182,7 +182,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "e69159dcd56d50865f4275b03576b8f53dd6d451cd646456238a2d045e9316e7",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/dark-keynote_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/dark-keynote.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#dark-keynote"
+    "video": "sample.mp4",
+    "video_sha256": "1a441812461fe54e10572efde07b28b1e69c90679eb963958a896f9c9b04b9a4",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

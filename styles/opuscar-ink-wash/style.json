@@ -179,7 +179,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "f12f7f564254ddc2507ab145ee2e2be47df021bfe9c9d440f0d9062a7d90bb20",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/ink-wash_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/ink-wash.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#ink-wash"
+    "video": "sample.mp4",
+    "video_sha256": "38c2d3681aa7d49a5d2199a319e4934a1b89d182ace9446c3575eccfa606533c",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

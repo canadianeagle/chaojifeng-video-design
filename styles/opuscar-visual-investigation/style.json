@@ -191,7 +191,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "4e0078b2eaac53e8598f09ac8b6a1921d3bd877d5547386f49d59b64293b3253",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/visual-investigation_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/visual-investigation.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#visual-investigation"
+    "video": "sample.mp4",
+    "video_sha256": "49e6a50190f9ecaefa24222a9a4aa8b89e10852345e0494a77fdfac127d51cfe",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

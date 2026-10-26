@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "e47c200812b180a0fb21bc9e5b457de80ead855de2f056a4c62766b13bd9ca8f",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/crayon-book_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/crayon-book.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#crayon-book"
+    "video": "sample.mp4",
+    "video_sha256": "f3cb476defb89550447d4e781b141766050f7c88fc00a9fd0ce39ab2c05d71cc",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

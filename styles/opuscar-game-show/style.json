@@ -179,7 +179,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "204bd842120beabc6e491f7881c4ecf4807c9a317c5cba3527b3b71c8cf70a53",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/game-show_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/game-show.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#game-show"
+    "video": "sample.mp4",
+    "video_sha256": "85f4d15081959ee9c80842c793a232dd13599788e277e05462afe51e46b31627",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

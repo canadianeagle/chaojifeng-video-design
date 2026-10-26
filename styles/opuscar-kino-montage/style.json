@@ -184,7 +184,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "fdb890c5c68dfa4b8dee334712ba2906a06d6eda2809952060f8543f5ee7f591",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/kino-montage_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/kino-montage.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#kino-montage"
+    "video": "sample.mp4",
+    "video_sha256": "2a4776bd3bb34ae6bf4d95593cbe76ff2a1f4f954eeb3c861c8c4e02e9310180",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

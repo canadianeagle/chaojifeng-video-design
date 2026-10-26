@@ -533,8 +533,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "594f6d15fce4848e086d2adc1218b0e32d5b118cae4a49ef23857fe378d5800b",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/archive-lighttable_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/archive-lighttable.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#archive-lighttable"
+        "video": "sample.mp4",
+        "video_sha256": "1551f544b61610c7d7be218cedca25def8ebcb0c4c532cdc78544321e65a22d1",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -718,8 +722,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "306dda677b859ace3cc1a12f372dd84fd5b8b91395852affa7d4b632080b9672",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/art-deco_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/art-deco.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#art-deco"
+        "video": "sample.mp4",
+        "video_sha256": "7b55fe51616048dcda50e920ab1e4141c00e009f141015a24c09f25837ca8bc1",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -902,8 +910,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "543a4acf51a6e7f8c4896f60f847db86f605c6858b9e16c301f71bc3222a10d1",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/ascii-crt_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/ascii-crt.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#ascii-crt"
+        "video": "sample.mp4",
+        "video_sha256": "5adf09f5bc7cc3821e1da7404e8f9305425a9b00d5526f9a53d8e6933bb7b135",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -1085,8 +1097,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "4133b3587ce009c44cd8d1c10e094c771fe3c47da6e4fd74dda9a21d061332d6",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/backrooms_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/backrooms.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#backrooms"
+        "video": "sample.mp4",
+        "video_sha256": "3674549d1c13400b57517d04a02772f70d2136b26bc17194987b85c3865d4e65",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -1270,8 +1286,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "28a1e4f35e042d9d5cdbbd8740a57bd5267430320e34fa3eaa72753a7ce93ddf",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/blueprint_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/blueprint.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#blueprint"
+        "video": "sample.mp4",
+        "video_sha256": "9afd54ec308e8f8f7bb20c5652d0a95c3874d7dc92b64392c9dcb49d28256fa8",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -1454,8 +1474,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "79d70fe522b57789211616288f64acff3e3aaa140c13dfd13d7ddc8454e9b250",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/brick-toy_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/brick-toy.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#brick-toy"
+        "video": "sample.mp4",
+        "video_sha256": "1d74377276a890a3094601f939786b29a70bbde495ee40a75b43ddadd6337936",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -1639,8 +1663,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "2cf0a4f42dae3b8361a8758c7ee334aab41cacdb6dfb231dd41937dda97931ee",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/briefing-board_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/briefing-board.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#briefing-board"
+        "video": "sample.mp4",
+        "video_sha256": "1a0dafce471a6dea58645e7a21bb053325337abf97916fc43eb944576008b3f7",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -1829,8 +1857,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "b2882dcab4c5a338736cf2334df4dc1b74fb355caf387e3f055424ab8c541df1",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/caption-news_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/caption-news.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#caption-news"
+        "video": "sample.mp4",
+        "video_sha256": "8146cfd754303b796961b388e0e241cc2427d93281855ef021a17a9e8624297e",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -2013,8 +2045,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "a0f76f40ce55c6d33b5b3c290bf88c2b5ea7df9adfe221b1a527d47c5d3a707e",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/cel-anime-80s_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/cel-anime-80s.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#cel-anime-80s"
+        "video": "sample.mp4",
+        "video_sha256": "40657a5d85560e26e5768ff3580a21ba03ff5fcfc78b2d9ebbd064b67c002918",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -2188,8 +2224,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "ed5ad70aa40f1cb6584c4e4ea4db3d85e4b69f3a35d63c6999f9ad66a9135fbe",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/city-symphony_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/city-symphony.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#city-symphony"
+        "video": "sample.mp4",
+        "video_sha256": "d1232cc2d36a51c5a61594dbd1dfaea2cc11dbdf8914687a4e8cc358e02d67ff",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -2374,8 +2414,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "c301b2a73c4e222a83bf044d74310adf42d2b37f8ba1505a74091bf7bb7aa318",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/countdown_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/countdown.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#countdown"
+        "video": "sample.mp4",
+        "video_sha256": "b2e5383e66a420dec5d5550ee16898bdcae9b67c0d04f108688ec3d3aa780edb",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -2558,8 +2602,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "e47c200812b180a0fb21bc9e5b457de80ead855de2f056a4c62766b13bd9ca8f",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/crayon-book_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/crayon-book.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#crayon-book"
+        "video": "sample.mp4",
+        "video_sha256": "f3cb476defb89550447d4e781b141766050f7c88fc00a9fd0ce39ab2c05d71cc",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -2746,8 +2794,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "e69159dcd56d50865f4275b03576b8f53dd6d451cd646456238a2d045e9316e7",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/dark-keynote_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/dark-keynote.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#dark-keynote"
+        "video": "sample.mp4",
+        "video_sha256": "1a441812461fe54e10572efde07b28b1e69c90679eb963958a896f9c9b04b9a4",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -2927,8 +2979,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "778ce5e060fe2a2cdf689913155012a527e929e569eb46237691ae4b8a234714",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/data-physical_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/data-physical.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#data-physical"
+        "video": "sample.mp4",
+        "video_sha256": "105cfdd6cbc140dffc71aae36c8f40c7fde324dfcdef362339e5b0a0d9e1dabd",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -3114,8 +3170,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "1b504e873efe6c5d8db468298997cbdb5eff4341f463fa51c2b405cb53d6d2cd",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/dataviz_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/dataviz.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#dataviz"
+        "video": "sample.mp4",
+        "video_sha256": "12dfd80558e521116de9bccd9629ec836b01aab856bdccf63adeccff93bd3cf2",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -3299,8 +3359,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "58625715a33d2d7e42758f65981678563745653cf78bebe7f61788e5960474a6",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/engraving_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/engraving.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#engraving"
+        "video": "sample.mp4",
+        "video_sha256": "591d61bb01229b5870f78c0853a24920a91c1429ef83b23c308bc27d355f05ce",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -3484,8 +3548,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "204bd842120beabc6e491f7881c4ecf4807c9a317c5cba3527b3b71c8cf70a53",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/game-show_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/game-show.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#game-show"
+        "video": "sample.mp4",
+        "video_sha256": "85f4d15081959ee9c80842c793a232dd13599788e277e05462afe51e46b31627",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -3670,8 +3738,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "d403e6074cc0e974186482c4d058c4297e5ec889f6c02b97190ea9e535206f75",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/glass-product_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/glass-product.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#glass-product"
+        "video": "sample.mp4",
+        "video_sha256": "4d4d07073e2bc7abcb537afae06fa19562de6f69f67f754df6865b734c308f25",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -3853,8 +3925,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "8a145a2edb7d1b4cfbe289bdf0a606430219f53c2f25c55ba619725158f9a815",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/halftone-dossier_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/halftone-dossier.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#halftone-dossier"
+        "video": "sample.mp4",
+        "video_sha256": "ec0dac24d2f2c70df974b8d75ac81d4301afe9bef6b105edc2f49724c622a520",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -4034,8 +4110,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "e655f50b3c6f26ec8f7354c88bd41b058da878612941244ec168d8840ac77cee",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/hd-2d_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/hd-2d.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#hd-2d"
+        "video": "sample.mp4",
+        "video_sha256": "82a764c8b6172e7ce5d9fc99a421c2a19f6f59e15c56b83c02f3ee4ee6400027",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -4220,8 +4300,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "77b9801a82ff1bf619dac25ae5cc1bd826ef976ee5953bae0fde33510d821619",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/hologram-hud_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/hologram-hud.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#hologram-hud"
+        "video": "sample.mp4",
+        "video_sha256": "3eeca104c6b45576284c13370b045eebf9dd712d9db85dc764f3dbec398baf7d",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -4404,8 +4488,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "b32a4ec7026b88b0c71b639bd87bc4b304d6286dfa46f7b73696625ad84d8a22",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/impasto_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/impasto.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#impasto"
+        "video": "sample.mp4",
+        "video_sha256": "a03f8fcd7dd293233d3f71feb4832c3867b07a443dd030bca818352d21e654e2",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -4589,8 +4677,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "f12f7f564254ddc2507ab145ee2e2be47df021bfe9c9d440f0d9062a7d90bb20",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/ink-wash_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/ink-wash.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#ink-wash"
+        "video": "sample.mp4",
+        "video_sha256": "38c2d3681aa7d49a5d2199a319e4934a1b89d182ace9446c3575eccfa606533c",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -4776,8 +4868,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "37b28287f9f9dee08bb7fcbca378f0631e53a3dc4744a440960548a6941c59d6",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/iso-infographic_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/iso-infographic.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#iso-infographic"
+        "video": "sample.mp4",
+        "video_sha256": "657fd06ee331c1d803e61d1b1c1bb16a4f8fdbb33cbb27b4c0acc81ea75a19fb",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -4966,8 +5062,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "fdb890c5c68dfa4b8dee334712ba2906a06d6eda2809952060f8543f5ee7f591",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/kino-montage_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/kino-montage.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#kino-montage"
+        "video": "sample.mp4",
+        "video_sha256": "2a4776bd3bb34ae6bf4d95593cbe76ff2a1f4f954eeb3c861c8c4e02e9310180",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -5148,8 +5248,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "9b5ef160d7f2109403b04fa13817bccdb836ecaa464467e4b8e8357509db367b",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/lidar-survey_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/lidar-survey.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#lidar-survey"
+        "video": "sample.mp4",
+        "video_sha256": "078d2ca0065febc50a495cf1e078bfdc1508ca489fb7174bfda9cd236c582863",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -5336,8 +5440,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "45700b6e0abf87d3325c8a5cdcc4db5782e4c15c544b747cc570d9ce3710e89a",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/living-screencast_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/living-screencast.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#living-screencast"
+        "video": "sample.mp4",
+        "video_sha256": "b94fb5f0e41f542848464dafb136df46da4abc1c9291f9e1b8b30e948075a08a",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -5521,8 +5629,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "7feaf6cf1ba68b90b78106eeb4386a9881eacd0d6b31b33ed48a32dd13ec7854",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/lowpoly-island_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/lowpoly-island.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#lowpoly-island"
+        "video": "sample.mp4",
+        "video_sha256": "d5f2da94f3d8718801ed1381fe1dd593e2fbc51e53995ada27d5c2bf580b9c5b",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -5705,8 +5817,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "987d734ac7608270e2b039e283bfb47414cdfadfe049f80bc2e9a7273b45cf56",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/microgame_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/microgame.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#microgame"
+        "video": "sample.mp4",
+        "video_sha256": "b1a9753810097d8a691a75b070388d7139a842a0637f89007d337a57ff5a549a",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -5886,8 +6002,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "bdefb1ae91eac33abc56d8c4f91fa86a7786d2e842068388afac5fe269703428",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/microscope_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/microscope.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#microscope"
+        "video": "sample.mp4",
+        "video_sha256": "7a68500b5753c0fa22e586474b931d5feacf5a0717a64600763306a4cdf62ab6",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -6068,8 +6188,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "60c5bde99994234d51b125765d2e1583da867fe47500ae42d05a7df88610e8f7",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/midcentury-toon_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/midcentury-toon.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#midcentury-toon"
+        "video": "sample.mp4",
+        "video_sha256": "02212da5584e09cf29b0590f8d24fbed41e2a69687c1b4f6c5a80cb929943844",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -6259,8 +6383,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "998a6255361c81565d211453fed7a1be70286e29d02c163d77a32517867da26a",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/news-package_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/news-package.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#news-package"
+        "video": "sample.mp4",
+        "video_sha256": "b7b8166b9288e93d70b5ebeb9e00cd6c7e07f51f27686e03e65ebb624c28a478",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -6444,8 +6572,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "d09be02d5efc4a316984833e5dd71bea7fcf95ac94af9540b0483fcf34d89616",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/newsreel_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/newsreel.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#newsreel"
+        "video": "sample.mp4",
+        "video_sha256": "a06162f2dae98595a29aa21c409181b80e97ed2942d11c748bc132bcb348cdef",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -6629,8 +6761,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "da2bd273d62fe7ecf5df216b6e96f21b6a0778ad77c41272252c0c6d81b01de1",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/one-line_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/one-line.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#one-line"
+        "video": "sample.mp4",
+        "video_sha256": "2a084ae16953363dd8e7927495f0c17ca34f3f28ca1d8902523ac2ecf9db1d3c",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -6811,8 +6947,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "a2ac99facda434f956076e9508ebdba44406bbeb80064ca9def756d72675918a",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/paper-lantern_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/paper-lantern.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#paper-lantern"
+        "video": "sample.mp4",
+        "video_sha256": "f959b508ede9c81107c89c01f54fd1106016f9ef68c6b19228b621c63a8173f2",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -6997,8 +7137,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "373ff711470a10d9101cb19c30fd2639197fa7fe8a599a30ba0dd6958ee7bc38",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/paper-popup_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/paper-popup.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#paper-popup"
+        "video": "sample.mp4",
+        "video_sha256": "15cb823cbf2ee1a877de52a477a0d2f4edde062d31ae30ca5c48e9ffa1caed0e",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -7180,8 +7324,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "bdc3dc9185d32b8e0ee94dc5d90bd3a384149c780c661304e020330913745e18",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/papercut-red_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/papercut-red.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#papercut-red"
+        "video": "sample.mp4",
+        "video_sha256": "2e6ce6b8fed550d584f54e5539646704102e9a6e6380b5571fee6be03cdea390",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -7365,8 +7513,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "f753b7f26994d63f7d128198ef099d183206edf6bd7492cf23bce7df12b857cb",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/pictogram-motion_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/pictogram-motion.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#pictogram-motion"
+        "video": "sample.mp4",
+        "video_sha256": "5a5fd88c852bc8d408d1274c499cec0ffff73dac70177783dca26c15672cc1ac",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -7549,8 +7701,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "656b16a674c5c142d9a540c5a92cda8469c6e9e758f737494db2152c989e604a",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/pixel-rpg_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/pixel-rpg.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#pixel-rpg"
+        "video": "sample.mp4",
+        "video_sha256": "52387a0b25d7ee2cdd1a760988498c027d10fb7d0f084e6633cb9f49d8047ffb",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -7734,8 +7890,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "b052cd84ed69898732debd293009cab02786b4fc7728dccb9d02a9a1192b47e5",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/risograph_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/risograph.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#risograph"
+        "video": "sample.mp4",
+        "video_sha256": "720b62ca3ed11662a7fadccf04743c32194cbef5c1e3d4ce5b57df0900f1f9fb",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -7918,8 +8078,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "9b332777f058c5914d5fea84b1be445c14faf632c807c9f883cb8fdc899bb098",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/rubber-hose_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/rubber-hose.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#rubber-hose"
+        "video": "sample.mp4",
+        "video_sha256": "e7d1d0a0ad1b88ef411b97787fbd83dfdbdb414ad92207a7718466b078a7eeb5",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -8101,8 +8265,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "2b445629b72125b3f6a359411def9fde4478294abb8a9c4821e2e219aef9fcbc",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/satellite-briefing_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/satellite-briefing.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#satellite-briefing"
+        "video": "sample.mp4",
+        "video_sha256": "b84ce6a3e42591d4f1428cc35769d4478b5bccc61f986f71f4ba7dcce49a8091",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -8285,8 +8453,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "5ce16fc270baed1e582c801f5db5b1d377f91065872c420c449c26eea9eda328",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/scifi-toon_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/scifi-toon.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#scifi-toon"
+        "video": "sample.mp4",
+        "video_sha256": "c764fa632fdc3b95f4f3075f2fe8654360c68528d66303a1905eb9623fadfd96",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -8469,8 +8641,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "72f7edc86977015ded7ecb11a305c85cf4fcafec1dff5d5a0fd78d2a5264fe7c",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/shadow-puppet_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/shadow-puppet.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#shadow-puppet"
+        "video": "sample.mp4",
+        "video_sha256": "b5c63168b11ed4468769326d057f3d8e9639cfeeb877f4b06d99b525ca7e7acd",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -8653,8 +8829,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "4911e71060640f3721ca7cafd1079a5fbe3d774071fba9ddae67d27df136dda2",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/silent-film_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/silent-film.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#silent-film"
+        "video": "sample.mp4",
+        "video_sha256": "57198d76bf4224c208b61b9e1609f4bea9474e932a00b7b8db82462b124d6323",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -8837,8 +9017,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "11a2a9dc043daf3b0b8225bd058268687534a3df520a57772962fa74abeafc18",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/silkscreen-poster_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/silkscreen-poster.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#silkscreen-poster"
+        "video": "sample.mp4",
+        "video_sha256": "8ae1b2c07bd4585a3a24a1b38dad489440fb7e0f80faf6c02503416378b88d2c",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -9022,8 +9206,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "f9f4d366156a9b62a4f35911996d846fc663169044508a871e50242785d7f392",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/spy-titles_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/spy-titles.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#spy-titles"
+        "video": "sample.mp4",
+        "video_sha256": "36e832d72232d331060889c89e24d5dfc29e22b34cc26d9ba3bbe796ddb23e9e",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -9206,8 +9394,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "425b9c6deed7e39815412b2d9c5f3059f906156669ca8297f8a481076704b2a2",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/stained-glass_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/stained-glass.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#stained-glass"
+        "video": "sample.mp4",
+        "video_sha256": "7e8883defaa09a4f632d31bb394b60bb738a9285930fb6239f2ae9527df55863",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -9391,8 +9583,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "45d52af40432e240aa4aa2120060b8311e9c1d56f1bfcd7f5aedafa36bfc2ce6",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/swiss-motion_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/swiss-motion.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#swiss-motion"
+        "video": "sample.mp4",
+        "video_sha256": "09639ce0cc856adceb177bacbe6d380d619fb25576b612402f0fcf1aa9a303ca",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -9573,8 +9769,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "c0e7f9dc5a5b415cbe2ff1706dfe6e647c70e212fcee619e25426ef8de6dd803",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/teardown_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/teardown.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#teardown"
+        "video": "sample.mp4",
+        "video_sha256": "a5e2a47c1ccf9233ed2c314edb999f5cb743352b9558bd7b8ea6830700c2b30c",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -9766,8 +9966,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "43b6da443f0ac77b2a7717a25bb05083063790a8ad824c4106c3b15f5982e60e",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/telestrator_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/telestrator.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#telestrator"
+        "video": "sample.mp4",
+        "video_sha256": "7bd11603e354a90e9edaa0b06febe1f808c4fb6b6d67f699e04b5359a2627987",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -9951,8 +10155,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "3941384751b0c93f72708afd33b272a097de72db09ac4e23b4fbe640e07a5714",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/tilt-shift_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/tilt-shift.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#tilt-shift"
+        "video": "sample.mp4",
+        "video_sha256": "2396f4881e386bfcad7a9e3f79dbab0614255c25ba51bd5c24ea29ab8e743e01",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -10135,8 +10343,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "8304c6b69800e80e2be929c3b86759b73abd8d7e1798789fc19e11d41eeffc39",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/ukiyoe_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/ukiyoe.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#ukiyoe"
+        "video": "sample.mp4",
+        "video_sha256": "0e93cf2147dc9d21342d399e69862952c062cfad1cdd487cfed38f3bc8ae14c4",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -10319,8 +10531,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "75e5675cc05e5825e50aaf8ce55c11a554bdec5d8b51cb02882f596434bba5fe",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/urban-sketch_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/urban-sketch.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#urban-sketch"
+        "video": "sample.mp4",
+        "video_sha256": "41c452cb880d7e69efbff99fa6d15da31ed00033e6a76a611e7fd14d015ada42",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -10516,8 +10732,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "4e0078b2eaac53e8598f09ac8b6a1921d3bd877d5547386f49d59b64293b3253",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/visual-investigation_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/visual-investigation.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#visual-investigation"
+        "video": "sample.mp4",
+        "video_sha256": "49e6a50190f9ecaefa24222a9a4aa8b89e10852345e0494a77fdfac127d51cfe",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -10703,8 +10923,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "be138ab3476cd8c7bcafc462ecec99a466a91f5c18b5f9b9fa325170e261fd5f",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/watercolor_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/watercolor.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#watercolor"
+        "video": "sample.mp4",
+        "video_sha256": "a222efe90cdbc0c2283d531757373f83c2b7dc0811212f4db4c032249884ead2",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -10887,8 +11111,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "aa6ddde5a18be001340cf20d1e2550fdce5b7e4c9f4392dcad5f03b276be1059",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/white-model_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/white-model.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#white-model"
+        "video": "sample.mp4",
+        "video_sha256": "6c8453ed8be6bc16380af3f5599cf91b79d8f0ce7e5d3dffb4b8c9ec74eb93a0",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -11072,8 +11300,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "aaf08759959faa4c1059e8e97b707228b209457eb2eb345811513e5a54e109b3",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/whiteboard_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/whiteboard.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#whiteboard"
+        "video": "sample.mp4",
+        "video_sha256": "7c4963607644c4e3fcda80b06c59760ace2516e45b96b091d51736d668efa282",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {
@@ -11256,8 +11488,12 @@
         "poster": "preview.jpg",
         "poster_sha256": "896f28e20bdd6c466544a6b137495adf9de04eb4c08bc25b5405cf9905656bc8",
         "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/woodcut_0.jpg",
-        "video": "https://lemomo-ai.github.io/lemo-opuscar/films/woodcut.mp4",
-        "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#woodcut"
+        "video": "sample.mp4",
+        "video_sha256": "a2b8682fa842dc317a2e98a16f44c5778963584cfa13bd311bc0641e55d06077",
+        "attribution": {
+          "name": "LemoLab · Lemo-Opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        }
       }
     },
     {

@@ -179,7 +179,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "45d52af40432e240aa4aa2120060b8311e9c1d56f1bfcd7f5aedafa36bfc2ce6",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/swiss-motion_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/swiss-motion.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#swiss-motion"
+    "video": "sample.mp4",
+    "video_sha256": "09639ce0cc856adceb177bacbe6d380d619fb25576b612402f0fcf1aa9a303ca",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

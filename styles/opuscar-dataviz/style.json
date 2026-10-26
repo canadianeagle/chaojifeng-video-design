@@ -181,7 +181,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "1b504e873efe6c5d8db468298997cbdb5eff4341f463fa51c2b405cb53d6d2cd",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/dataviz_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/dataviz.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#dataviz"
+    "video": "sample.mp4",
+    "video_sha256": "12dfd80558e521116de9bccd9629ec836b01aab856bdccf63adeccff93bd3cf2",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

@@ -176,7 +176,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "a2ac99facda434f956076e9508ebdba44406bbeb80064ca9def756d72675918a",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/paper-lantern_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/paper-lantern.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#paper-lantern"
+    "video": "sample.mp4",
+    "video_sha256": "f959b508ede9c81107c89c01f54fd1106016f9ef68c6b19228b621c63a8173f2",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

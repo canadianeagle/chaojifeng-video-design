@@ -176,7 +176,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "9b5ef160d7f2109403b04fa13817bccdb836ecaa464467e4b8e8357509db367b",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/lidar-survey_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/lidar-survey.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#lidar-survey"
+    "video": "sample.mp4",
+    "video_sha256": "078d2ca0065febc50a495cf1e078bfdc1508ca489fb7174bfda9cd236c582863",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

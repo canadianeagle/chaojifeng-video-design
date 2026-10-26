@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "a0f76f40ce55c6d33b5b3c290bf88c2b5ea7df9adfe221b1a527d47c5d3a707e",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/cel-anime-80s_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/cel-anime-80s.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#cel-anime-80s"
+    "video": "sample.mp4",
+    "video_sha256": "40657a5d85560e26e5768ff3580a21ba03ff5fcfc78b2d9ebbd064b67c002918",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

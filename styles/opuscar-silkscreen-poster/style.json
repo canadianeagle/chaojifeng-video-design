@@ -178,7 +178,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "11a2a9dc043daf3b0b8225bd058268687534a3df520a57772962fa74abeafc18",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/silkscreen-poster_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/silkscreen-poster.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#silkscreen-poster"
+    "video": "sample.mp4",
+    "video_sha256": "8ae1b2c07bd4585a3a24a1b38dad489440fb7e0f80faf6c02503416378b88d2c",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

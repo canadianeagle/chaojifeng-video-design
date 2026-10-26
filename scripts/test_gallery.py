@@ -10,6 +10,7 @@ import subprocess
 import tempfile
 import unittest
 from build_gallery import ROOT, gallery_data, image_url, build
+from import_samples import import_samples, SILENT
 
 
 class FooterText(HTMLParser):
@@ -34,7 +35,10 @@ class GalleryTests(unittest.TestCase):
         for item in posters:
             self.assertTrue(item['poster'].startswith('data:image/jpeg;base64,'),item['id'])
             self.assertTrue(base64.b64decode(item['poster'].split(',',1)[1],validate=True).startswith(b'\xff\xd8\xff'))
-            self.assertTrue(item['video'].startswith('https://lemomo-ai.github.io/lemo-opuscar/films/'))
+            self.assertEqual(item['video'],f'../../styles/{item["id"]}/sample.mp4')
+            self.assertTrue((ROOT/'assets/gallery'/item['video']).resolve().is_file())
+            self.assertEqual(item['attribution']['name'],'LemoLab · Lemo-Opuscar')
+        self.assertTrue(all(x['attribution'] is None for x in self.data['styles'] if not x['poster']))
         self.assertTrue(set(self.data['featured'])<=ids)
 
     def test_media_input_rejects_disguised_html_and_stale_hash(self):
@@ -49,6 +53,7 @@ class GalleryTests(unittest.TestCase):
         result=build(check=True)
         self.assertTrue(result['portable_posters'])
         self.assertFalse(result['video_preload'])
+        self.assertEqual(result['bundled_videos'],59)
         self.assertEqual(before,catalog.read_bytes())
         self.assertTrue((ROOT/'assets/gallery/expressions.html').is_file())
 
@@ -57,7 +62,42 @@ class GalleryTests(unittest.TestCase):
         footer=''.join(parsed.text)
         self.assertNotIn('来源代表画面与样片来自',footer)
         self.assertNotIn('画面可离线浏览',footer)
-        self.assertIn('来源与许可',footer)
+        self.assertNotIn('来源与许可',footer)
+        html=(ROOT/'assets/gallery/index.html').read_text()
+        self.assertNotIn('来源样片',html)
+        self.assertNotIn('在来源页观看',html)
+        self.assertNotIn('source-badge',html)
+        self.assertNotIn('https://lemomo-ai.github.io/lemo-opuscar/films/',html)
+
+    def test_bundled_samples_cover_every_style_and_excluded_audio_is_removed(self):
+        manifest=json.loads((ROOT/'assets/gallery/samples.json').read_text())
+        samples=manifest['samples']
+        self.assertEqual(len(samples),59)
+        self.assertEqual({s['style_id'] for s in samples},{s['id'] for s in self.data['styles'] if s['poster']})
+        for sample in samples:
+            self.assertGreater(sample['duration'],0)
+            self.assertGreater(sample['width'],0)
+            self.assertLess(sample['bytes'],50_000_000)
+            if sample['style_id'].removeprefix('opuscar-') in SILENT:
+                self.assertFalse(sample['has_audio'])
+                self.assertEqual(sample['changes'],'audio removed')
+                self.assertNotEqual(sample['source_asset']['digest'],'sha256:'+sample['sha256'])
+            else:
+                self.assertEqual(sample['changes'],'none')
+                self.assertEqual(sample['source_asset']['digest'],'sha256:'+sample['sha256'])
+
+    def test_import_rejects_unreviewed_urls_and_missing_release_hashes(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td);manifest=root/'assets.json'
+            data=dict(repository='lemomo-ai/lemo-opuscar',tag='web',assets=[dict(name='ink-wash.mp4',download_url='http://localhost/private',size=10,digest='sha256:'+'a'*64)])
+            manifest.write_text(json.dumps(data))
+            with self.assertRaisesRegex(ValueError,'unexpected release download URL'):
+                import_samples(manifest,root/'cache')
+            data['assets'][0].update(download_url='https://github.com/lemomo-ai/lemo-opuscar/releases/download/web/ink-wash.mp4',digest=None)
+            manifest.write_text(json.dumps(data))
+            with self.assertRaisesRegex(ValueError,'SHA-256'):
+                import_samples(manifest,root/'cache')
+            self.assertFalse((root/'cache').exists())
 
     def test_isolated_filter_compare_copy_and_media_lifecycle(self):
         node=shutil.which('node')
@@ -96,11 +136,14 @@ function assert(value,message){if(!value)throw new Error(message)}
  reset();styles.slice(0,4).forEach(x=>toggleCompare(x.id));assert(comparison.length===3,'comparison limit');
  openComparison();assert(compare.open&&document.getElementById('compare-grid').innerHTML.includes(styles[0].name),'comparison opens');
  compare.close();openStyle('opuscar-ink-wash');assert(detail.open&&currentVideo===null,'detail opens without fetching video');
- playSample();assert(playCalls===1&&currentVideo.src.startsWith('https://'),'explicit play creates one video');
+ assert(!document.getElementById('style-attribution').hidden,'imported style has a concise attribution');
+ playSample();assert(playCalls===1&&currentVideo.src==='../../styles/opuscar-ink-wash/sample.mp4','explicit play uses the bundled film');
  detail.close();assert(pauseCalls>0&&currentVideo===null,'closing releases the player');
  openStyle('paper-editorial');await copy(prompt(selected));assert(copied.at(-1).includes('paper-editorial')&&copied.at(-1).includes('【主题】'),'copy creation instruction');
+ assert(document.getElementById('style-attribution').hidden,'original styles have no imported attribution');
+ openStyle('opuscar-game-show');assert(document.getElementById('film-note').textContent.includes('无声'),'silent samples are labeled for the viewer');
  assert(safeColor('red; background:url(https://example.com)','fallback')==='fallback','style tokens cannot inject external CSS resources');
- console.log(JSON.stringify({scope:'isolated-interaction-logic-only',checks:14,status:'passed',browser_layout_verified:false}));
+ console.log(JSON.stringify({scope:'isolated-interaction-logic-only',checks:17,status:'passed',browser_layout_verified:false}));
 })().catch(e=>{console.error(e);process.exitCode=1});
 '''
         with tempfile.TemporaryDirectory() as td:

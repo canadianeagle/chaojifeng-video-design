@@ -184,7 +184,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "b2882dcab4c5a338736cf2334df4dc1b74fb355caf387e3f055424ab8c541df1",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/caption-news_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/caption-news.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#caption-news"
+    "video": "sample.mp4",
+    "video_sha256": "8146cfd754303b796961b388e0e241cc2427d93281855ef021a17a9e8624297e",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

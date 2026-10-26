@@ -180,7 +180,11 @@
     "poster": "preview.jpg",
     "poster_sha256": "77b9801a82ff1bf619dac25ae5cc1bd826ef976ee5953bae0fde33510d821619",
     "poster_source": "https://github.com/lemomo-ai/lemo-opuscar/blob/413a6bd6d78ebd3bdd5abaec9538a26867f890df/styleboard/img/hologram-hud_0.jpg",
-    "video": "https://lemomo-ai.github.io/lemo-opuscar/films/hologram-hud.mp4",
-    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/#hologram-hud"
+    "video": "sample.mp4",
+    "video_sha256": "3eeca104c6b45576284c13370b045eebf9dd712d9db85dc764f3dbec398baf7d",
+    "attribution": {
+      "name": "LemoLab · Lemo-Opuscar",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
+    }
   }
 }

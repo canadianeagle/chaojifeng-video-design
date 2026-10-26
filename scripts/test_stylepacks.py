@@ -120,6 +120,9 @@ class StylePackageTests(unittest.TestCase):
         self.package(gallery={'video':'javascript:alert(1)'})
         with self.assertRaisesRegex(ValueError,'HTTPS'):
             load_registry([self.collection])
+        self.package(gallery={'attribution':{'name':'Author','url':'javascript:alert(1)'}})
+        with self.assertRaisesRegex(ValueError,'HTTPS'):
+            load_registry([self.collection])
 
     def test_ready_runtime_needs_actual_style_capabilities(self):
         plan=json.loads((ROOT/'templates/plan.json').read_text())

@@ -31,14 +31,17 @@ python3 -m unittest discover -s scripts -p 'test_*.py'
 
 style.json 是风格元数据唯一来源；catalog/styles.json 与 styles/README.md 由 build 生成，图册再由 catalog 构建。不手改生成区。生成内置目录始终排除外置项目与个人集合，防止其内容混入分发包。
 
-风格画廊为 assets/gallery/index.html，动效与配方目录保留在 expressions.html。前者从 styles-template.html 生成，后者从 template.html 生成。风格图像嵌入 HTML，单独复制 index.html 仍可浏览画面、筛选和比较；本地规则与动效链接沿原目录解析。视频仅在明确点击时加载，一个详情页只保留一个播放器，关闭详情时停止并释放。
+风格画廊为 assets/gallery/index.html，动效与配方目录保留在 expressions.html。前者从 styles-template.html 生成，后者从 template.html 生成。风格图像嵌入 HTML，单独复制 index.html 仍可浏览画面、筛选和比较；播放样片需保留完整目录。59 条内置视频位于对应风格包的 sample.mp4，画廊使用相对路径，明确点击后才加载；一个详情页只保留一个播放器，关闭详情时停止并释放。
 
-风格包可选 gallery.poster（包内图片）、poster_sha256、video（包内文件或 HTTPS）与 source_url（HTTPS）。新增包及图片后重新生成即可进入画廊，无需手改页面列表；缺少图片时使用当前颜色和图形参数。gallery 不从基底继承，来源图像与新包的实际效果分别记账。
+风格包可选 gallery.poster（包内图片）、poster_sha256、video（包内视频或 HTTPS）和 video_sha256；可选 attribution.name／url 用于详情内的简短署名。旧 source_url 元数据仍可读取，画廊不生成外部播放入口。新增包及素材后重新生成即可进入画廊，无需手改页面列表；缺少图片时使用当前颜色和图形参数。gallery 不从基底继承，案例素材与新包的实际效果分别记账。Lemo-Opuscar 的 59 种风格仅在详情内显示一行简短署名，基础风格不加此标注。
 
-固定来源库的 59 张代表帧由 import_gallery.py 从相同提交的已核实本地 checkout 导入；仅取 styleboard/img/<slug>_0.jpg，不下载影片。导入后运行 stylepacks.py build 和 build_gallery.py。来源清单为 assets/gallery/reference-frames.json，完整性检查使用 stylepacks.py validate --sources。更新来源包后重新导入图像，避免重写元数据时遗漏 gallery 配置。
+59 张代表帧由 import_gallery.py 从固定提交的已核实本地 checkout 导入；只取 styleboard/img/<slug>_0.jpg，并保留已集成的视频绑定。样片由 import_samples.py 根据审查后的 web Release 资产清单串行导入：先核对 GitHub 发布的大小与 SHA-256，再探测视频轨、时长和尺寸。game-show、paper-lantern、news-package 的音轨不纳入分发，移除音轨时核对视频包内容哈希保持一致。断点与临时下载留在忽略目录 Output/gallery-downloads，已验证文件可复用。
+
+代表帧清单为 assets/gallery/reference-frames.json；样片清单为 assets/gallery/samples.json，记录资产版本、原文件哈希、分发文件哈希、媒体信息和变更。导入后运行 stylepacks.py build 与 build_gallery.py；完整性检查使用 stylepacks.py validate --sources。更新来源包后重新导入素材，避免元数据刷新恢复外链或遗漏本地绑定。
 
 ```sh
 python3 scripts/import_gallery.py --source /path/to/inspected-checkout
+python3 scripts/import_samples.py --release-manifest /path/to/reviewed-release-assets.json
 python3 -m unittest discover -s scripts -p test_gallery.py
 ```
 
